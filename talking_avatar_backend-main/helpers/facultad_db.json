@@ -1,0 +1,53 @@
+{
+  "facultad": {
+    "nombre": "Facultad de Ingeniería y Tecnología",
+    "ubicación": "Calle Principal 123, Ciudad Universitaria",
+    "horario_atencion_bedelia": "Lunes a Viernes de 09:00 a 20:00",
+    "contacto": {
+      "telefono": "+54 11 1234-5678",
+      "email": "consultas@facu.edu.ar",
+      "web": "https://www.facu.edu.ar"
+    }
+  },
+  "tramites": [
+    {
+      "nombre": "Inscripción a Finales",
+      "procedimiento": "Se realiza a través del sistema SIU Guaraní en la pestaña 'Inscripción a Exámenes'.",
+      "requisitos": "Tener la cursada aprobada y ser alumno regular."
+    },
+    {
+      "nombre": "Solicitud de Certificado de Alumno Regular",
+      "procedimiento": "Se descarga directamente desde el portal de autogestión en formato PDF con firma digital."
+    },
+    {
+      "nombre": "Boleto Estudiantil",
+      "procedimiento": "Presentar DNI y tarjeta SUBE en la oficina de Bienestar Estudiantil de 10 a 16 hs."
+    }
+  ],
+  "materias": [
+    {
+      "id": "PROG1",
+      "nombre": "Programación I",
+      "profesor": "Ing. Carlos Pérez",
+      "dia": "Lunes y Miércoles",
+      "horario": "18:00 a 22:00",
+      "aula": "Laboratorio 3",
+      "correlativas": "Ninguna"
+    },
+    {
+      "id": "BD1",
+      "nombre": "Bases de Datos",
+      "profesor": "Dra. Ana López",
+      "dia": "Martes",
+      "horario": "19:00 a 22:00",
+      "aula": "Aula 402",
+      "correlativas": "Programación I"
+    }
+  ],
+  "fechas_importantes": {
+    "inicio_cuatrimestre": "11 de marzo de 2024",
+    "fin_cuatrimestre": "28 de junio de 2024",
+    "receso_invierno": "Del 15 al 26 de julio",
+    "inscripcion_materias": "Del 1 al 7 de marzo"
+  }
+}

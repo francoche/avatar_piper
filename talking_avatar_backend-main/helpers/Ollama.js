@@ -1,33 +1,40 @@
-const { default: ollama } = require('ollama'); // <--- ¡Importación corregida!
+const { default: ollama } = require('ollama');
+const fs = require('fs');
+const path = require('path');
 
-// Define una variable para mantener la historia de la conversación
-const conversationHistory = [];
+// 1. Cargamos el JSON de la facultad una sola vez al iniciar
+const rawData = fs.readFileSync(path.join(__dirname, 'facultad_db.json'), 'utf8');
+const facultadInfo = JSON.parse(rawData);
 
-async function askLlama(prompt) {
+async function askLlama(promptUsuario) {
     try {
-        // 1. Agrega el nuevo mensaje del usuario al historial
-        conversationHistory.push({ role: 'user', content: prompt });
-        
-        // 2. Llama a ollama.chat con TODO el historial
-        const response = await ollama.chat({
-            model: 'llama3.2:3b',
-            messages: conversationHistory, // <--- Se pasa todo el array
+        // 2. Construimos un "Prompt Maestro" que incluye el JSON y la pregunta
+        const fullPrompt = `
+            Eres el asistente virtual de la facultad. 
+            Tu fuente de datos es el siguiente JSON:
+            ${JSON.stringify(facultadInfo, null, 2)}
+
+            Instrucciones:
+            - Usa SOLO la información del JSON para responder.
+            - Si la información no está , di que consulten en Bedelía.
+            - Responde de forma concisa y amable.
+
+            Pregunta del alumno: ${promptUsuario}
+            Respuesta:
+        `;
+
+        // 3. Usamos .generate para una respuesta única y rápida
+        const response = await ollama.generate({
+            model: 'llama3.2:1b', 
+            prompt: fullPrompt,
         });
 
-        // 3. Obtiene la respuesta del asistente
-        const assistantResponse = response.message.content;
-        
-        // 4. Agrega la respuesta del asistente al historial
-        conversationHistory.push({ role: 'assistant', content: assistantResponse });
+        return response.response;
 
-        return assistantResponse;
     } catch (err) {
         console.error('Error llamando a Ollama:', err);
-        // Si hay un error, considera revertir el último mensaje del usuario para limpiar el estado
-        conversationHistory.pop(); 
         throw err;
     }
 }
 
-// Para que el ejemplo funcione como un módulo de Node.js
-module.exports = { askLlama, conversationHistory };
+module.exports = { askLlama };
