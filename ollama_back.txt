@@ -1,0 +1,53 @@
+const { default: ollama } = require('ollama'); // <--- ¡Importación corregida!
+const fs = require('fs'); // <--- FALTA ESTA LÍNEA
+const path = require('path'); // <--- AGREGA ESTA TAMBIÉN POR SEGURIDAD
+// Define una variable para mantener la historia de la conversación
+//const conversationHistory = [];
+
+// 1. Cargamos el JSON de la facultad
+// Usamos path.join para que no falle según desde dónde corras el servidor
+const rawData = fs.readFileSync(path.join(__dirname, 'facultad_db.json'), 'utf8');
+const facultadInfo = JSON.parse(rawData);
+
+// 2. Inicializamos el historial con un mensaje de SISTEMA
+// Esto le da el contexto permanente al bot
+const conversationHistory = [
+    { 
+        role: 'system', 
+        content: `Eres el asistente virtual de la facultad. 
+        Usa la siguiente información en formato JSON para responder las dudas de los alumnos. 
+        Si algo no está aquí, responde que deben consultar en Bedelía.
+        
+        INFORMACIÓN DE LA FACULTAD:
+        ${JSON.stringify(facultadInfo, null, 2)}` 
+    }
+];
+
+async function askLlama(prompt) {
+    try {
+        // 1. Agrega el nuevo mensaje del usuario al historial
+        conversationHistory.push({ role: 'user', content: prompt });
+        
+        // 2. Llama a ollama.chat con TODO el historial
+        const response = await ollama.chat({
+            model: 'llama3.2:3b',
+            messages: conversationHistory, // <--- Se pasa todo el array
+        });
+
+        // 3. Obtiene la respuesta del asistente
+        const assistantResponse = response.message.content;
+        
+        // 4. Agrega la respuesta del asistente al historial
+        conversationHistory.push({ role: 'assistant', content: assistantResponse });
+
+        return assistantResponse;
+    } catch (err) {
+        console.error('Error llamando a Ollama:', err);
+        // Si hay un error, considera revertir el último mensaje del usuario para limpiar el estado
+        conversationHistory.pop(); 
+        throw err;
+    }
+}
+
+// Para que el ejemplo funcione como un módulo de Node.js
+module.exports = { askLlama, conversationHistory };
