@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useRef, useState, useMemo } from 'react'
+
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, useTexture, Loader, Environment, useFBX, useAnimations, OrthographicCamera } from '@react-three/drei';
 import { MeshStandardMaterial } from 'three/src/materials/MeshStandardMaterial';
@@ -346,34 +347,94 @@ const STYLES = {
 }
 
 function App() {
-
   const audioPlayer = useRef();
 
   const [speak, setSpeak] = useState(false);
-  const [text, setText] = useState("My name is Arwen. I'm a virtual human who can speak whatever you type here along with realistic facial movements.");
+  const [text, setText] = useState(""); // Empezamos vacío
   const [audioSource, setAudioSource] = useState(null);
   const [playing, setPlaying] = useState(false);
 
-  // End of play
+  // --- LÓGICA DE VOZ ---
+  const [isListening, setIsListening] = useState(false);
+  const recognitionRef = useRef(null);
+
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      recognitionRef.current = new SpeechRecognition();
+      recognitionRef.current.lang = 'es-ES'; // Idioma español
+      recognitionRef.current.continuous = false; // Se detiene al terminar la frase
+
+      recognitionRef.current.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        setText(transcript); // Guardamos lo que escuchó
+        setIsListening(false);
+        
+        // DISPARO AUTOMÁTICO: En cuanto termina de procesar la voz, activa el Avatar
+        setSpeak(true);
+      };
+
+      recognitionRef.current.onerror = (event) => {
+        console.error("Error de voz:", event.error);
+        setIsListening(false);
+      };
+
+      recognitionRef.current.onend = () => {
+        setIsListening(false);
+      };
+    }
+  }, []);
+
+  const handleMicClick = () => {
+    if (isListening) {
+      recognitionRef.current.stop();
+    } else {
+      setText(""); // Limpiamos texto previo
+      setIsListening(true);
+      recognitionRef.current.start();
+    }
+  };
+  // ----------------------
+
   function playerEnded(e) {
     setAudioSource(null);
     setSpeak(false);
     setPlaying(false);
   }
 
-  // Player is read
   function playerReady(e) {
     audioPlayer.current.audioEl.current.play();
     setPlaying(true);
-
-  }  
+  }
 
   return (
     <div className="full">
       <div style={STYLES.area}>
-        <textarea rows={4} type="text" style={STYLES.text} value={text} onChange={(e) => setText(e.target.value.substring(0, 200))} />
-        <button onClick={() => setSpeak(true)} style={STYLES.speak}> { speak? 'Running...': 'Speak' }</button>
+        {/* Feedback visual de lo que se escuchó */}
+        <div style={{ color: 'white', marginBottom: '10px', fontSize: '1.2em', minHeight: '1.5em' }}>
+          {isListening ? "🎤 Escuchando..." : text}
+        </div>
 
+        {/* Botón único de Micrófono */}
+        <button 
+          onClick={handleMicClick} 
+          style={{
+            ...STYLES.speak,
+            backgroundColor: isListening ? '#ff4b4b' : '#222222',
+            borderRadius: '50%',
+            width: '60px',
+            height: '60px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '1.5em'
+          }}
+          disabled={speak} // Bloqueado mientras el avatar responde
+        >
+          {speak ? '⏳' : '🎤'}
+        </button>
+        
+        {speak && <span style={{color: 'white', fontSize: '0.8em'}}>El avatar está procesando...</span>}
       </div>
 
       <ReactAudioPlayer
@@ -381,36 +442,17 @@ function App() {
         ref={audioPlayer}
         onEnded={playerEnded}
         onCanPlayThrough={playerReady}
-        
-      />
-      
-      {/* <Stats /> */}
-    <Canvas dpr={2} onCreated={(ctx) => {
-        ctx.gl.physicallyCorrectLights = true;
-      }}>
-
-      <OrthographicCamera 
-      makeDefault
-      zoom={2000}
-      position={[0, 1.65, 1]}
       />
 
-      {/* <OrbitControls
-        target={[0, 1.65, 0]}
-      /> */}
-
-      <Suspense fallback={null}>
-        <Environment background={false} files="/images/photo_studio_loft_hall_1k.hdr" />
-      </Suspense>
-
-      <Suspense fallback={null}>
-        <Bg />
-      </Suspense>
-
-      <Suspense fallback={null}>
-
-
-
+      <Canvas dpr={2} onCreated={(ctx) => { ctx.gl.physicallyCorrectLights = true; }}>
+        <OrthographicCamera makeDefault zoom={2000} position={[0, 1.65, 1]} />
+        <Suspense fallback={null}>
+          <Environment background={false} files="/images/photo_studio_loft_hall_1k.hdr" />
+        </Suspense>
+        <Suspense fallback={null}>
+          <Bg />
+        </Suspense>
+        <Suspense fallback={null}>
           <Avatar 
             avatar_url="/model.glb" 
             speak={speak} 
@@ -418,18 +460,14 @@ function App() {
             text={text}
             setAudioSource={setAudioSource}
             playing={playing}
-            />
-
-      
-      </Suspense>
-
-  
-
-  </Canvas>
-  <Loader dataInterpolation={(p) => `Loading... please wait`}  />
-  </div>
-  )
+          />
+        </Suspense>
+      </Canvas>
+      <Loader dataInterpolation={(p) => `Loading...`} />
+    </div>
+  );
 }
+
 
 function Bg() {
   
