@@ -11,8 +11,10 @@ const textToSpeech = async (text) => {
         // Rutas (usando las que ya tienes configuradas)
         const audioDir = path.join(__dirname, '../public/audio');
         const fullPath = path.join(audioDir, filename);
-        const piperExe = 'C:\\Users\\franc\\Downloads\\avatar_piper\\Talking_Avatar\\piper\\piper.exe';
-        const modelPath = 'C:\\Users\\franc\\Downloads\\avatar_piper\\Talking_Avatar\\piper\\es_AR-daniela-high.onnx';
+        //const piperExe = 'C:\\Users\\franc\\Downloads\\avatar_piper\\Talking_Avatar\\piper\\piper.exe';
+        //const modelPath = 'C:\\Users\\franc\\Downloads\\avatar_piper\\Talking_Avatar\\piper\\es_AR-daniela-high.onnx';
+        const piperExe = '../piper/piper.exe';
+        const modelPath = '../piper/es_AR-daniela-high.onnx';
 
         // Asegurar que la carpeta de destino exista
         if (!fs.existsSync(audioDir)){
