@@ -1,15 +1,32 @@
 [
   {
-    "nombre": "Inscripción a Finales",
-    "procedimiento": "Se realiza a través del sistema SIU Guaraní en la pestaña 'Inscripción a Exámenes'.",
-    "requisitos": "Tener la cursada aprobada y ser alumno regular."
+    "id": "INSCRIPCION",
+    "tipo": "tramite",
+    "nombre": "Inscripción",
+    "keywords": ["inscribirme", "anotarme", "inscripcion", "ingreso", "carrera", "ingresar"],
+    "respuesta": {
+      "corta": "Para inscribirte, hacé la preinscripción en la web de la facu (noviembre a febrero). Luego llevá a Alumnado tu DNI, secundario, partida de nacimiento y 3 fotos.",
+      "larga": "Mayores de 25 años sin secundario pueden inscribirse por el Art. 7 rindiendo examen."
+    }
   },
   {
-    "nombre": "Solicitud de Certificado de Alumno Regular",
-    "procedimiento": "Se descarga directamente desde el portal de autogestión en formato PDF con firma digital."
+    "id": "RECUPERAR_CLAVE",
+    "tipo": "tramite",
+    "nombre": "Recuperar clave",
+    "keywords": ["recuperar clave", "olvide contraseña", "no puedo entrar al siu", "clave siu", "pass"],
+    "respuesta": {
+      "corta": "Entrá al SIU, cliqueá en '¿Olvidaste tu contraseña?' y poné tu DNI para recibir un mail. Si no te llega, hablalo en Alumnado.",
+      "larga": ""
+    }
   },
   {
-    "nombre": "Boleto Estudiantil",
-    "procedimiento": "Presentar DNI y tarjeta SUBE en la oficina de Bienestar Estudiantil de 10 a 16 hs."
+    "id": "CERT_REGULAR",
+    "tipo": "tramite",
+    "nombre": "Certificado de Regularidad",
+    "keywords": ["certificado", "alumno regular", "constancia", "regularidad", "boleto"],
+    "respuesta": {
+      "corta": "El Certificado de Alumno Regular se pide directo desde tu cuenta del SIU Guaraní. Se descarga en PDF y ya tiene firma digital.",
+      "larga": ""
+    }
   }
 ]

@@ -1,20 +1,52 @@
 [
   {
     "id": "PROG1",
-    "nombre": "Programación I",
-    "profesor": "Ing. Carlos Pérez",
-    "dia": "Lunes y Miércoles",
-    "horario": "18:00 a 22:00",
-    "aula": "Laboratorio 3",
-    "correlativas": "Ninguna"
+    "tipo": "materia",
+    "nombre": "Fundamentos de Programación",
+    "keywords": ["prog 1", "programacion 1", "programacion uno", "fundamentos", "intro programacion", "programacion"],
+    "respuesta": {
+      "corta": "Fundamentos de Programación es una materia anual de primer año. Es clave para empezar a programar.",
+      "larga": "Se dicta anualmente en Oro Verde y Concepción. En el primer cuatrimestre se enseñan las bases algorítmicas y luego lenguajes tipados."
+    }
+  },
+  {
+    "id": "MATDISC",
+    "tipo": "materia",
+    "nombre": "Matemática Discreta",
+    "keywords": ["matematica discreta", "discreta"],
+    "respuesta": {
+      "corta": "Matemática Discreta está en el segundo año de Sistemas. Otorga las bases lógicas para ingeniería de software.",
+      "larga": ""
+    }
   },
   {
     "id": "BD1",
+    "tipo": "materia",
     "nombre": "Bases de Datos",
-    "profesor": "Dra. Ana López",
-    "dia": "Martes",
-    "horario": "19:00 a 22:00",
-    "aula": "Aula 402",
-    "correlativas": "Programación I"
+    "keywords": ["bases", "datos", "bd1", "base de datos"],
+    "respuesta": {
+      "corta": "Bases de Datos se cursa en el tercer año de Sistemas. Ideal para aprender SQL y modelado.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "IA",
+    "tipo": "materia",
+    "nombre": "Inteligencia Artificial",
+    "keywords": ["inteligencia artificial", "ia", "artificial"],
+    "respuesta": {
+      "corta": "La cursada de Inteligencia Artificial es en el 4º año de la Licenciatura en Sistemas. Muy recomendada.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "REDES",
+    "tipo": "materia",
+    "nombre": "Comunicaciones y Redes",
+    "keywords": ["redes", "comunicaciones", "telecomunicaciones"],
+    "respuesta": {
+      "corta": "Comunicaciones y Redes corresponde al cuarto año de la carrera.",
+      "larga": ""
+    }
   }
 ]

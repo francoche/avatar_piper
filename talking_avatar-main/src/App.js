@@ -116,8 +116,8 @@ function App() {
     if (SpeechRecognition) {
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.lang = 'es-ES';
-      recognitionRef.current.continuous = false; // El motor corta el tramo al detectar silencio
-      recognitionRef.current.interimResults = true; // [MEJORA] Permite leer mientras habla
+      recognitionRef.current.continuous = false;
+      recognitionRef.current.interimResults = true; 
 
       recognitionRef.current.onstart = () => {
          console.log('[VOICE] Escuchando...');
@@ -125,24 +125,39 @@ function App() {
 
       recognitionRef.current.onresult = (event) => {
         let transcript = '';
-        for (let i = event.resultIndex; i < event.results.length; ++i) {
+        for (let i = 0; i < event.results.length; ++i) {
           transcript += event.results[i][0].transcript;
         }
 
-        console.log(`[VOICE] Texto detectado: ${transcript}`);
-        setText(transcript);
+        // LIMPIEZA DEL TEXTO
+        const cleanTranscript = transcript.trim().toLowerCase().replace(/\s+/g, ' ');
+        console.log(`[VOICE] Parcial: "${cleanTranscript}"`);
+        setText(cleanTranscript);
         
-        // [MEJORA] Delay de confirmación de silencio antes de enviar la request
         if (transcriptTimeoutRef.current) {
           clearTimeout(transcriptTimeoutRef.current);
         }
         
+        // FILTRO DE CALIDAD
+        const words = cleanTranscript.split(' ').filter(w => w.length > 0);
+        if (words.length < 3 || cleanTranscript.length < 10) {
+           console.log('[VOICE] Texto muy corto, esperando más input...');
+           transcriptTimeoutRef.current = setTimeout(() => {
+              setIsListening(false);
+           }, 1000);
+           return;
+        }
+
         console.log('[VOICE] Esperando confirmación de silencio...');
+        // FEEDBACK VISUAL
+        setText(`🧠 Procesando lo que dijiste...`);
+
         transcriptTimeoutRef.current = setTimeout(() => {
+          console.log(`[VOICE] Final enviado: "${cleanTranscript}"`);
+          setText(cleanTranscript); // Restaurar para el backend
           setIsListening(false);
-          console.log('[VOICE] Silencio confirmado, enviando dictado a API...');
           setSpeak(true);
-        }, 800);
+        }, 1000);
       };
 
       recognitionRef.current.onerror = (event) => {
@@ -151,7 +166,8 @@ function App() {
       };
 
       recognitionRef.current.onend = () => {
-        setIsListening(false); // Por si corta forzado
+        // NO desactiva isListening aquí para no romper el timeout de confirmación.
+        console.log('[VOICE] Micrófono en pausa (onend).');
       };
     }
   }, []);

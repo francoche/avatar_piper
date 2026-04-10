@@ -1,52 +1,50 @@
-# Arquitectura Final del Backend del Avatar Interactivo
+# Documentación Técnica: Backend del Avatar Interactivo
 
-Este documento consolida la arquitectura y las optimizaciones definitivas aplicadas al backend (Node.js + Express) para garantizar un altísimo rendimiento en hardware sumamente limitado (Intel i3, 8GB RAM, sin GPU). El sistema ha quedado estructuralmente completo y preparado para la interacción fluida con el futuro frontend.
+Este documento describe la arquitectura final, estable y robustecida del backend del Avatar Interactivo. Se encuentra preparado para producción, refactorizado sin deuda técnica y optimizado para latencias bajas en hardware limitado.
 
----
+## 1. Arquitectura y Pipeline Transaccional
 
-## 1. Arquitectura de 5 Capas Dinámicas
+Todo requerimiento que ingresa al endpoint `/chat` es procesado mediante el patrón estructural de **Fallback Pipeline** dentro de `helpers/pipeline.js` y no se detiene hasta que devuelve una estructura estricta garantizada por tipado explícito: `{ reply, type }`.
 
-El endpoint unificado `/chat` implementa un embudo determinista estricto ('Waterfall Validation') antes de delegar cualquier recurso al modelo onnx (TTS) o binario pesado (Ollama):
+### El Flujo de Ejecución (/chat)
+1. **Validación Inicial**: Si el prompt llega vacío, el endpoint directamente devuelve un soft-fallback con código `400` y tipado válido.
+2. **Caché en Memoria (`cache.js`)**: Las preguntas frecuentes respondidas recientemente se almacenan. La resolución es en **~0ms**.
+3. **FAQ (`faq.js`)**: Barrido superficial optimizado por frases cortas frecuentes (ej: costo, horario_alumnado).
+4. **Intención (`intencion.js`)**: Identificador de ramas lógico, clasifica entre `materia, tramite, ubicacion, contacto, becas`.
+5. **Parser JSON Estático (`parser.js`)**: Cruza la intención con las bases de datos `JSON` operables en memoria cruzando *keywords*.
+6. **IA Ollama (`Ollama.js`)**: Si (y solo si) la intención resulta "desconocido" y el log de tokens ingresado tiene más de 50 caracteres para valer la pena, se activa nuestro LLM local.
+7. **Fallback Seguro**: Si la IA crashea o ninguna capa logró interpretar la petición, se emite una respuesta aleatoria predeterminada.
+8. **Gestor Global de Errores**: Si aún con todo el pipeline blindado ocurre alguna excepción (error 500), se activa la directiva Try-Catch global del Route para devolver una respuesta válida por defecto e impedir que el Frontend se quede colgado esperando.
 
-1. **Caché en Memoria (0ms):** Intercepción absoluta donde texto repetido (o normalizado idéntico) devuelve instantáneamente el archivo en RAM salvando procesos. Esto abarca las llamadas a I/O, el NLU, y el LLM.
-2. **FAQ Directa (~1ms):** Respuestas prefabricadas, ahora dotadas de humanización (plantillas aleatorias para generar simpatía).
-3. **Detección Determinista (~1-2ms):** Un micro-NLU local intercepta el *topic* (materia, tramite, ubicacion, etc.) cortando ambigüedades.
-4. **Parser JSON (~2ms):** Búsqueda estructural ultra-rápida por alias para escupir respuestas armadas.
-5. **IA Controlada (Ollama) + Hard Cap (Fallback Rígido):** Si nada de lo estructurado sirve y el prompt califica (>80 caracteres), recién allí la IA genera.
+## 2. Bases de Datos Jerárquicas (Carga Estática JSON)
 
-### ⚡ Limitación de Respuesta (Hard Cap)
-Para blindar el CPU y estabilizar la experiencia, las respuestas asíncronas de Ollama se *truncatean* rígidamente a `120 caracteres`. Esto previene desvaríos del modelo y restringe el overhead masivo en renderización de Text-to-Speech final.
+Todas residen en `helpers/data/`.  
+**Nota de Mantenimiento:** Para agregar nuevo conocimiento, simplemente editar el `json` pertinente y agregar las `keywords` siempre normalizadas (minúsculas y sin tilde). El Parser trabaja en `$O(n)$` en memoria, garantizando tiempo de búsqueda < 1ms.
 
----
+## 3. Estados Emitidos a Frontend (Types Contract)
 
-## 2. Flujo Completo del Sistema
-1. El usuario envía `POST /chat`.
-2. Una centralización de la **Normalización** entra en juego eliminando tildes, carácteres especiales, pasajes a minúsculas y comprimiendo strings.
-3. Se decide el string de respuesta ideal (sea del bot determinista o del bot generativo Ollama).
-4. El sistema ejecuta `POST /talk` bajo la lógica TTS reescrita.
-5. El sistema entrega el path de audio `.wav` generado aleatoriamente.
-   - **Mejora Crítica:** `tts.js` revisa una tabla `Map()` nativa guardando tracks pasados y previniendo que una frase procesada sufra el spawn de `piper.exe` más de una vez.
+Es indispensable que el Frontend utilice estos `types` para reaccionar o disparar animaciones específicas.
+Todos han sido normalizados a minúscula estricta:
+  - `materia`
+  - `tramite`
+  - `ubicacion`
+  - `contacto`
+  - `becas`
+  - `faq`
+  - `opinion`
+  - `ia`
+  - `fallback`
 
----
+El endpoint `/talk` está bloqueado por diseño bajo un contrato cerrado que **solamente** devuelve `{"filename": "/audio/xxx.wav"}` procesado nativamente por la binario standalone de Piper garantizando ciclos asíncronos rápidos.
 
-## 3. Optimizaciones Críticas Aplicadas
+## 4. Troubleshooting (Auditoría de Logs)
 
-- **Aislamiento del Lazo de Eventos (Event Loop):** `piper.exe` es invocado sincrónicamente a nivel shell, pero manejado puramente mediante streams asíncronos y Promesas anilladas, sin consumir el Event Loop mientras dura la inferencia local.
-- **Normalización DRY (Don’t Repeat Yourself):** Unificación de algoritmos de sanitización de texto.
-- **Limpieza de Dependencias:** El proyecto pasó de ser una app renderizada via *Pug* a una API REST pura, purgada de bloatwares como `cookie-parser` o SDKs obsoletos.
-- **Micro-Logs:** El sistema ahora traza el milisegundo exacto de cruce con la estampa de finalización: `[API] Respuesta final: "..."`.
+Todos los logs innecesarios dentro del código base (los `console.log("[MEJORA]")`) fueron eliminados, instaurando una política higiénica de control de tiempos para medir rendimiento de capas:
 
----
-
-## 4. Métricas de Rendimiento Acordadas
-- **Renderizado Estático (FAQ/Parsers):** `1 – 8 ms`.
-- **Renderizado Caché (Pregunta repetida):** `< 1 ms`.
-- **Renderizado TTS (Primera vez):** `~1.8 - 2.5 seg` (Dependiente puramente de `piper.exe` y la RAM disponible, encapsulado out-of-loop).
-- **Renderizado TTS (Cache hit):** `0 ms` inmediato.
-- **Ollama Generation:** Limitado por el cap y cortado si el usuario inserta algo genérico.
-
----
-
-## 5. Limitaciones Conocidas del Sistema
-1. **Piper Cold-Start:** Al instanciar de cero, el arranque del modelo `.onnx` toma ~`500ms`. Al basarnos en `spawn` dinámico, ganamos total estabilidad y seguridad en RAM, pero pagamos esa estricta cuota por cada frase nueva generada.
-2. **Respuestas Cerradas:** La decisión de capar en 120 caracteres inhabilita explicaciones magistrales profundas, en gran honor de un flujo conversacional rápido e interactivo de pregunta/respuesta idóneo para un avatar informativo frontal.
+```
+[API] Intención: materia
+[API] Capa: Parser (1ms)
+[API] Tiempo total: 3ms
+[API] Respuesta final: "..." (Type: materia)
+```
+Si experimentan latencias de +1000ms de manera sostenida, identificar qué Capa la provoca revisando la consola de Node. Si es la capa IA, considerar que el Ollama host puede estar agotando los recursos gráficos/CPU del equipo. En `Ollama.js`, las configuraciones de latencia (`num_predict` y `num_ctx`) han sido limitadas al mínimo aceptable para preservar desempeño en hardware chico.

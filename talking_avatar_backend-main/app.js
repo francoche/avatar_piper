@@ -30,4 +30,6 @@ app.use(function(err, req, res, next) {
   res.json({ error: err.message });
 });
 
+console.log('[DATA] Sistema actualizado: referencias institucionales normalizadas a "Alumnado"');
+
 module.exports = app;

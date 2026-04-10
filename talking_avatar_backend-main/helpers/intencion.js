@@ -15,7 +15,6 @@ function detectarIntencion(texto) {
   const norm = normalizar(texto);
   for (const [intencion, keys] of Object.entries(keywords)) {
     if (keys.some(k => norm.includes(k))) {
-      console.log(`[MEJORA] Nuevas intenciones agregadas: Detección expandida a '${intencion}'`);
       return intencion;
     }
   }

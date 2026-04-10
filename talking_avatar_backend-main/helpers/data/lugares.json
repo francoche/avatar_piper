@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ORO_VERDE",
+    "tipo": "ubicacion",
+    "nombre": "Sede Oro Verde",
+    "keywords": ["oro verde", "sede central", "principal", "ruta 11", "sede"],
+    "respuesta": {
+      "corta": "La Sede central está en Oro Verde, Ruta Provincial Nº 11, Km 10,5. Es donde se cursa Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "CDELU",
+    "tipo": "ubicacion",
+    "nombre": "Sede Concepción del Uruguay",
+    "keywords": ["concepcion", "del uruguay", "cdelu", "ingenieria en telecomunicaciones"],
+    "respuesta": {
+      "corta": "Nuestra sede en Concepción del Uruguay está en calle 25 de Mayo 385.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "ALUMNADO_CONTACTO",
+    "tipo": "contacto",
+    "nombre": "Alumnado",
+    "keywords": ["alumnado", "bedelia", "horario alumnado", "oficina de alumnos"],
+    "respuesta": {
+      "corta": "El equipo de Alumnado atiende siempre de lunes a viernes, de 9 a 20 horas en la sede principal.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "BIENESTAR_CONTACTO",
+    "tipo": "contacto",
+    "nombre": "Secretaría de Bienestar Estudiantil",
+    "keywords": ["bienestar", "deportes", "ayuda", "secretaria de bienestar", "guerra"],
+    "respuesta": {
+      "corta": "La Secretaría de Bienestar, a cargo de Nicolás Guerra, se contacta a fcyt_bienestar@uader.edu.ar.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "ACADEMICA_CONTACTO",
+    "tipo": "contacto",
+    "nombre": "Secretaría Académica",
+    "keywords": ["academica", "secretaria academica", "lescano", "dudas de cursada"],
+    "respuesta": {
+      "corta": "Cualquier tema profundo de inscripción o materias consultalo en fcyt_academica@uader.edu.ar.",
+      "larga": ""
+    }
+  }
+]

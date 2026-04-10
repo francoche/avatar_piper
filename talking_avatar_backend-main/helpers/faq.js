@@ -48,11 +48,11 @@ const faq = [
     ]
   },
   {
-    keywords: ['horario bedelia'],
+    keywords: ['horario alumnado', 'horario bedelia'],
     respuesta: [
-      'El equipo de Bedelía atiende siempre de lunes a viernes, de 9 a 20 horas.',
-      'Podés acercarte a Bedelía durante la semana, en el horario de 9 a 20 hs.',
-      'La oficina de Bedelía está abierta de 9 a 20 horas (lunes a viernes).'
+      'El equipo de Alumnado atiende siempre de lunes a viernes, de 9 a 20 horas.',
+      'Podés acercarte a Alumnado durante la semana, en el horario de 9 a 20 hs.',
+      'La oficina de Alumnado está abierta de 9 a 20 horas (lunes a viernes).'
     ]
   },
   {
@@ -86,9 +86,7 @@ function buscarFAQ(pregunta) {
 
   for (const item of faq) {
     if (item.keywords.some(k => p.includes(k))) {
-      // Elegir respuesta aleatoria del array para humanizar
       const elegida = item.respuesta[Math.floor(Math.random() * item.respuesta.length)];
-      console.log('[MEJORA] Respuestas más naturales implementadas (FAQ dinámica)');
       return elegida;
     }
   }

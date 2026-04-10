@@ -3,7 +3,7 @@ const { default: ollama } = require('ollama');
 async function askLlama(promptUsuario) {
   const prompt = `
 Responde en máximo 8 palabras.
-Si no sabes: "Bedelía".
+Si no sabes recomendá consultar en "Alumnado".
 
 Pregunta: ${promptUsuario}
 Respuesta:
@@ -13,9 +13,9 @@ Respuesta:
     model: 'llama3.2:1b',
     prompt,
     options: {
-      num_predict: 10,
+      num_predict: 20,
       temperature: 0.1,
-      num_ctx: 256
+      num_ctx: 128
     }
   });
 

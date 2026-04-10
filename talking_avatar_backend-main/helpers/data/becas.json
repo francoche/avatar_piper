@@ -1,0 +1,42 @@
+[
+  {
+    "id": "UADER",
+    "tipo": "becas",
+    "nombre": "Beca UADER",
+    "keywords": ["uader", "beca facultad", "becas de la facu", "ayuda economica"],
+    "respuesta": {
+      "corta": "La Beca UADER se pide en marzo directo por el SIU Guaraní. Son 8 cuotas de ayuda económica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "PROGRESAR",
+    "tipo": "becas",
+    "nombre": "Beca Progresar",
+    "keywords": ["progresar", "beca nacion", "anses"],
+    "respuesta": {
+      "corta": "Para la beca Progresar, inscribite de forma online desde la página oficial de argentina.gob.ar.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "BELGRANO",
+    "tipo": "becas",
+    "nombre": "Beca Manuel Belgrano",
+    "keywords": ["manuel", "belgrano", "estrategicas"],
+    "respuesta": {
+      "corta": "La Beca Manuel Belgrano es clave si estudiás carreras IT o informática. Es un gran incentivo de Nación.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "INAUBEPRO",
+    "tipo": "beca",
+    "nombre": "Beca Provincial Inaubepro",
+    "keywords": ["inaubepro", "instituto becario", "entrerriano"],
+    "respuesta": {
+      "corta": "Podés pedir la beca del Instituto Becario Provincial a mitad de año, chequeá sus redes para las fechas.",
+      "larga": ""
+    }
+  }
+]
