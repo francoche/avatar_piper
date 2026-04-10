@@ -1,0 +1,10 @@
+{
+  "nombre": "Facultad de Ingeniería y Tecnología",
+  "ubicación": "Calle Principal 123, Ciudad Universitaria",
+  "horario_atencion_bedelia": "Lunes a Viernes de 09:00 a 20:00",
+  "contacto": {
+    "telefono": "+54 11 1234-5678",
+    "email": "consultas@facu.edu.ar",
+    "web": "https://www.facu.edu.ar"
+  }
+}

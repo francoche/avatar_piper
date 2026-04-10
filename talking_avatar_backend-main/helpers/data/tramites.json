@@ -1,0 +1,15 @@
+[
+  {
+    "nombre": "Inscripción a Finales",
+    "procedimiento": "Se realiza a través del sistema SIU Guaraní en la pestaña 'Inscripción a Exámenes'.",
+    "requisitos": "Tener la cursada aprobada y ser alumno regular."
+  },
+  {
+    "nombre": "Solicitud de Certificado de Alumno Regular",
+    "procedimiento": "Se descarga directamente desde el portal de autogestión en formato PDF con firma digital."
+  },
+  {
+    "nombre": "Boleto Estudiantil",
+    "procedimiento": "Presentar DNI y tarjeta SUBE en la oficina de Bienestar Estudiantil de 10 a 16 hs."
+  }
+]

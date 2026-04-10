@@ -1,0 +1,20 @@
+[
+  {
+    "id": "PROG1",
+    "nombre": "Programación I",
+    "profesor": "Ing. Carlos Pérez",
+    "dia": "Lunes y Miércoles",
+    "horario": "18:00 a 22:00",
+    "aula": "Laboratorio 3",
+    "correlativas": "Ninguna"
+  },
+  {
+    "id": "BD1",
+    "nombre": "Bases de Datos",
+    "profesor": "Dra. Ana López",
+    "dia": "Martes",
+    "horario": "19:00 a 22:00",
+    "aula": "Aula 402",
+    "correlativas": "Programación I"
+  }
+]
