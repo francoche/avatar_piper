@@ -44,12 +44,13 @@ function App() {
   const audioPlayer = useRef();
 
   const [speak, setSpeak] = useState(false);
-  const [text, setText] = useState(""); 
+  const [text, setText] = useState("");
   const [audioSource, setAudioSource] = useState(null);
   const [playing, setPlaying] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [animType, setAnimType] = useState('talking');
   const [hasGreeted, setHasGreeted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState(null);
 
   const recognitionRef = useRef(null);
   const sessionTimeoutRef = useRef(null);
@@ -101,83 +102,83 @@ function App() {
 
   useEffect(() => {
     if (sessionTimeoutRef.current) clearTimeout(sessionTimeoutRef.current);
-    
+
     // Si no está interactuando pero hay texto en pantalla (ya contestó), iniciamos countdown
     if (avatarState === 'idle' && text !== '') {
-       sessionTimeoutRef.current = setTimeout(() => {
-          resetSession();
-       }, 15000); 
+      sessionTimeoutRef.current = setTimeout(() => {
+        resetSession();
+      }, 15000);
     }
   }, [avatarState, text]);
-
-  // STT Auto-Flujo (Corte Silencio Nativo)
-  useEffect(() => {
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (SpeechRecognition) {
-      recognitionRef.current = new SpeechRecognition();
-      recognitionRef.current.lang = 'es-ES';
-      recognitionRef.current.continuous = false;
-      recognitionRef.current.interimResults = true; 
-
-      recognitionRef.current.onstart = () => {
-         console.log('[VOICE] Escuchando...');
-      };
-
-      recognitionRef.current.onresult = (event) => {
-        let transcript = '';
-        for (let i = 0; i < event.results.length; ++i) {
-          transcript += event.results[i][0].transcript;
-        }
-
-        // LIMPIEZA DEL TEXTO
-        const cleanTranscript = transcript.trim().toLowerCase().replace(/\s+/g, ' ');
-        console.log(`[VOICE] Parcial: "${cleanTranscript}"`);
-        setText(cleanTranscript);
-        
-        if (transcriptTimeoutRef.current) {
-          clearTimeout(transcriptTimeoutRef.current);
-        }
-        
-        // FILTRO DE CALIDAD
-        const words = cleanTranscript.split(' ').filter(w => w.length > 0);
-        if (words.length < 3 || cleanTranscript.length < 10) {
-           console.log('[VOICE] Texto muy corto, esperando más input...');
-           transcriptTimeoutRef.current = setTimeout(() => {
-              setIsListening(false);
-           }, 1000);
-           return;
-        }
-
-        console.log('[VOICE] Esperando confirmación de silencio...');
-        // FEEDBACK VISUAL
-        setText(`🧠 Procesando lo que dijiste...`);
-
-        transcriptTimeoutRef.current = setTimeout(() => {
-          console.log(`[VOICE] Final enviado: "${cleanTranscript}"`);
-          setText(cleanTranscript); // Restaurar para el backend
-          setIsListening(false);
-          setSpeak(true);
-        }, 1000);
-      };
-
-      recognitionRef.current.onerror = (event) => {
-        console.error("Error de voz:", event.error);
-        setIsListening(false);
-      };
-
-      recognitionRef.current.onend = () => {
-        // NO desactiva isListening aquí para no romper el timeout de confirmación.
-        console.log('[VOICE] Micrófono en pausa (onend).');
-      };
-    }
-  }, []);
 
   const handleMicClick = () => {
     if (avatarState !== 'idle') return; // Bloqueo Interfaz Inteligente
 
+    // recrear instancia limpia para evitar error 'network' en reuso
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) return;
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'es-ES';
+    recognition.continuous = false;
+    recognition.interimResults = true;
+
+    recognition.onstart = () => console.log('[VOICE] Escuchando...');
+
+    recognition.onresult = (event) => {
+      let transcript = '';
+      for (let i = 0; i < event.results.length; i++) {
+        transcript += event.results[i][0].transcript;
+      }
+
+      const cleanTranscript = transcript.trim().toLowerCase().replace(/\s+/g, ' ');
+      console.log(`[VOICE] Parcial: "${cleanTranscript}"`);
+      setText(cleanTranscript);
+
+      if (transcriptTimeoutRef.current) {
+        clearTimeout(transcriptTimeoutRef.current);
+      }
+
+      const words = cleanTranscript.split(' ').filter(w => w.length > 0);
+      if (words.length < 3 || cleanTranscript.length < 10) {
+        console.log('[VOICE] Texto muy corto, esperando más input...');
+        transcriptTimeoutRef.current = setTimeout(() => {
+          setIsListening(false);
+        }, 1000);
+        return;
+      }
+
+      console.log('[VOICE] Esperando confirmación de silencio...');
+      setText(`🧠 Procesando lo que dijiste...`);
+
+      transcriptTimeoutRef.current = setTimeout(() => {
+        console.log(`[VOICE] Final enviado: "${cleanTranscript}"`);
+        setText(cleanTranscript);
+        setIsListening(false);
+        setSpeak(true);
+      }, 1000);
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Error de voz:", event.error);
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      console.log('[VOICE] Micrófono en pausa (onend).');
+    };
+
+    recognitionRef.onend = () => console.log('[VOICE] Microfono en pausa (onend)');
+    recognition.current = recognition;
+
     setText("");
     setIsListening(true);
-    recognitionRef.current.start();
+    try {
+      recognition.start();
+    } catch (e) {
+      console.error('[VOICE] No se pudo iniciar:', e);
+      setIsListening(false);
+    }
   };
 
   // Pipeline LLM + Servidor Local
@@ -196,7 +197,7 @@ function App() {
           let { filename } = response.data;
           const fullPath = AZURE_HOST + filename;
           setAudioSource(fullPath);
-          
+
           // [MEJORA] Coherencia animaciones (Mapping custom)
           const backendType = response.data.type || response.aiType || 'default';
           const selAnim = animationMap[backendType.toLowerCase()] || animationMap.default;
@@ -206,9 +207,12 @@ function App() {
         .catch(err => {
           console.error("Error al procesar:", err);
           setSpeak(false);
+
+          setErrorMsg("No pude conectarme al servidor. Intentá de nuevo.");
+          setTimeout(() => setErrorMsg(null), 4000);
         });
     };
-    
+
     procesarReq();
   }, [speak, text]);
 
@@ -222,68 +226,97 @@ function App() {
     // TAREA 5: Variación Temporal Humana
     // Retraso artificial del TTS para emular el arranque de voz 
     const randomPreSpeechDelay = Math.floor(Math.random() * (450 - 250 + 1)) + 250;
-    
+
     setTimeout(() => {
       if (audioPlayer.current && audioPlayer.current.audioEl.current) {
-          audioPlayer.current.audioEl.current.play();
-          setPlaying(true);
+        audioPlayer.current.audioEl.current.play();
+        setPlaying(true);
       }
     }, randomPreSpeechDelay);
   }
 
   return (
-    <div className="full">
-      <div style={STYLES.area}>
-        <div style={{ color: 'white', marginBottom: '10px', fontSize: '1.2em', minHeight: '1.5em' }}>
-          {avatarState === 'listening' && "🎤 Escuchando..."}
-          {avatarState === 'thinking' && "🧠 Pensando..."}
-          {avatarState === 'talking' && "🗣️ Respondiendo..."}
-          {avatarState === 'idle' && text}
+    <>
+      <div className="full">
+        <div style={STYLES.area}>
+          <div style={{ color: 'white', marginBottom: '10px', fontSize: '1.2em', minHeight: '1.5em' }}>
+            {avatarState === 'listening' && "🎤 Escuchando..."}
+            {avatarState === 'thinking' && "🧠 Pensando..."}
+            {avatarState === 'talking' && "🗣️ Respondiendo..."}
+            {avatarState === 'idle' && text}
+          </div>
+
+          {errorMsg && (
+            <div style={{
+              background: 'rgba(200, 50, 50, 0.85)',
+              color: '#fff',
+              padding: '8px 14px',
+              borderRadius: '8px',
+              marginBottom: '10px',
+              fontSize: '0.95em'
+            }}>
+              {errorMsg}
+            </div>
+          )}
+
+          <button
+            onClick={handleMicClick}
+            style={{
+              ...STYLES.speak,
+              backgroundColor: avatarState !== 'idle' ? '#555555' : '#222222',
+              borderRadius: '50%',
+              width: '60px',
+              height: '60px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '1.5em',
+              cursor: avatarState !== 'idle' ? 'not-allowed' : 'pointer',
+              transition: 'background-color 0.3s ease'
+            }}
+            disabled={avatarState !== 'idle'}
+          >
+            {avatarState !== 'idle' ? '⏳' : '🎤'}
+          </button>
         </div>
 
-        <button
-          onClick={handleMicClick}
-          style={{
-            ...STYLES.speak,
-            backgroundColor: avatarState !== 'idle' ? '#555555' : '#222222',
-            borderRadius: '50%',
-            width: '60px',
-            height: '60px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontSize: '1.5em',
-            cursor: avatarState !== 'idle' ? 'not-allowed' : 'pointer',
-            transition: 'background-color 0.3s ease'
-          }}
-          disabled={avatarState !== 'idle'}
-        >
-          {avatarState !== 'idle' ? '⏳' : '🎤'}
-        </button>
+        <ReactAudioPlayer
+          src={audioSource}
+          ref={audioPlayer}
+          onEnded={playerEnded}
+          onCanPlayThrough={playerReady}
+        />
+
+        <Canvas dpr={2} onCreated={(ctx) => { ctx.gl.physicallyCorrectLights = true; }}>
+          <PerspectiveCamera makeDefault fov={40} position={[0, 1.2, 4]} />
+          <OrbitControls target={[0, 1.0, 0]} />
+          <Suspense fallback={null}>
+            <Environment background={false} files="/images/photo_studio_loft_hall_1k.hdr" />
+          </Suspense>
+          <Suspense fallback={null}>
+            <Bg />
+          </Suspense>
+          <Suspense fallback={null}>
+            <Avatar avatarState={avatarState} />
+          </Suspense>
+        </Canvas>
+        <Loader dataInterpolation={(p) => `Loading...`} />
       </div>
 
-      <ReactAudioPlayer
-        src={audioSource}
-        ref={audioPlayer}
-        onEnded={playerEnded}
-        onCanPlayThrough={playerReady}
-      />
-
-      <Canvas dpr={2} onCreated={(ctx) => { ctx.gl.physicallyCorrectLights = true; }}>
-        <PerspectiveCamera makeDefault fov={40} position={[0, 1.2, 4]} />
-        <OrbitControls target={[0, 1.0, 0]} />
-        <Suspense fallback={null}>
-          <Environment background={false} files="/images/photo_studio_loft_hall_1k.hdr" />
-        </Suspense>
-        <Suspense fallback={null}>
-          <Bg />
-        </Suspense>
-        <Suspense fallback={null}>
-          <Avatar avatarState={avatarState} />
-        </Suspense>
-      </Canvas>
-      <Loader dataInterpolation={(p) => `Loading...`} />
-    </div>
+      <div style={{
+        position: 'absolute',
+        top: '15px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: 10,
+        textAlign: 'center',
+        color: '#ffffff',
+        textShadow: '0 2px 8px rgba(0,0,0,0.7)'
+      }}>
+        <div style={{ fontSize: '1.4em', fontWeight: 'bold', letterSpacing: '2px' }}>Cyto</div>
+        <div style={{ fontSize: '0.75em', opacity: 0.7, marginTop: '2px' }}>Asistente Virtual - LITEM</div>
+      </div>
+    </>
   );
 }
 

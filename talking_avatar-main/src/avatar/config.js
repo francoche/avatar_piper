@@ -2,7 +2,7 @@ export const AVATAR_CONFIG = {
   model: '/model.glb',
 
   animations: {
-    idle: '/animations/Twist.FBX',
+    idle: '/idle.FBX',
     thinking: '/animations/Pointing_Up.FBX',
     talking: '/animations/Talking.FBX',
     saludo: '/animations/Hello.FBX',
