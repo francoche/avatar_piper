@@ -120,11 +120,11 @@ export default function Avatar({ avatar_url, avatarState }) {
 
       // [MEJORA] Naturalidad de animaciones: velocidad dinámica
       if (targetName === "thinking") {
-         newAction.timeScale = 0.5;
+         newAction.timeScale = 0.4;
       } else if (targetName === "idle") {
-         newAction.timeScale = 0.8 + Math.random() * 0.4;
+         newAction.timeScale = 0.5 + Math.random() * 0.2;
       } else {
-         newAction.timeScale = 1.0;
+         newAction.timeScale = 0.6;
       }
 
       newAction.play();
@@ -165,10 +165,10 @@ export default function Avatar({ avatar_url, avatarState }) {
       // Micro-movimientos de sistema (idle vivo)
       if (baseGroupRef.current) {
          if (avatarState === 'idle') {
-            baseGroupRef.current.rotation.y = THREE.MathUtils.lerp(baseGroupRef.current.rotation.y, Math.sin(state.clock.elapsedTime * 0.8) * 0.03, 0.08);
+            baseGroupRef.current.rotation.y = THREE.MathUtils.lerp(baseGroupRef.current.rotation.y, Math.sin(state.clock.elapsedTime * 0.4) * 0.03, 0.05);
             baseGroupRef.current.rotation.x = THREE.MathUtils.lerp(baseGroupRef.current.rotation.x, 0, 0.08);
          } else if (avatarState === 'listening') {
-            baseGroupRef.current.rotation.y = THREE.MathUtils.lerp(baseGroupRef.current.rotation.y, Math.sin(state.clock.elapsedTime * 1.8) * 0.05, 0.1);
+            baseGroupRef.current.rotation.y = THREE.MathUtils.lerp(baseGroupRef.current.rotation.y, Math.sin(state.clock.elapsedTime * 0.9) * 0.05, 0.06);
             baseGroupRef.current.rotation.x = THREE.MathUtils.lerp(baseGroupRef.current.rotation.x, 0.08, 0.1); // Leve inclinación
          } else {
             baseGroupRef.current.rotation.y = THREE.MathUtils.lerp(baseGroupRef.current.rotation.y, 0, 0.1);
