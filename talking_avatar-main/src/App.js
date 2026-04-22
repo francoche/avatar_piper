@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
 // Hooks
@@ -52,13 +52,23 @@ function App() {
   // Estado del audio
   const [audioSource, setAudioSource] = React.useState(null);
 
+  // Callbacks memoizados para evitar re-ejecuciones innecesarias
+  const handleAudioReady = useCallback((audioPath) => {
+    setAudioSource(audioPath);
+    setSpeak(false); // ✅ Resetear speak para evitar duplicados
+  }, [setSpeak]);
+
+  const handleError = useCallback(() => {
+    setSpeak(false);
+  }, [setSpeak]);
+
   // Pipeline de IA
   useAIResponse(
     speak,
     text,
-    (audioPath) => setAudioSource(audioPath),
+    handleAudioReady,
     setAnimType,
-    () => setSpeak(false)
+    handleError
   );
 
   // Reproductor de audio

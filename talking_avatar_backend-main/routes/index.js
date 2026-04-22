@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const { procesarMensaje } = require('../helpers/pipeline');
-const { textToSpeech } = require('../helpers/tts');
 
+const { textToSpeechGoogle } = require('../helpers/googletts');
 // Test básico
 router.get('/', (req, res) => {
   res.json({ msg: 'Backend funcionando 🚀' });
@@ -30,11 +30,11 @@ router.post('/talk', async (req, res) => {
   if (!text) return res.status(400).json({ error: 'Falta el texto para hablar' });
 
   try {
-    const result = await textToSpeech(text);
+    const result = await textToSpeechGoogle(text);
     res.json(result);
   } catch (err) {
-    console.error('Error en /talk (Piper TTS):', err);
-    res.status(500).json({ error: 'Error al generar el audio con Piper.' });
+    console.error('Error en /talk (Google TTS):', err);
+    res.status(500).json({ error: 'Error al generar el audio con Google TTS.' });
   }
 });
 

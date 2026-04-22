@@ -26,7 +26,7 @@
     "keywords": ["bases", "datos", "bd1", "base de datos"],
     "respuesta": {
       "corta": "Bases de Datos se cursa en el tercer año de Sistemas. Ideal para aprender SQL y modelado.",
-      "larga": ""
+      "larga": "Bases de Datos es anual y se dicta en ambas sedes. Se aprende modelado relacional, SQL y conceptos de bases de datos modernas."
     }
   },
   {
@@ -46,7 +46,7 @@
     "keywords": ["redes", "comunicaciones", "telecomunicaciones"],
     "respuesta": {
       "corta": "Comunicaciones y Redes corresponde al cuarto año de la carrera.",
-      "larga": ""
+      "larga": "Comunicaciones y Redes se dicta en ambas sedes. Es fundamental para entender cómo funcionan las redes de computadoras y las telecomunicaciones,ademas te enseña los distintos protocolos y capas de la red."
     }
   }
 ]

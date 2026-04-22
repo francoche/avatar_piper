@@ -2,7 +2,7 @@ export const AVATAR_CONFIG = {
   model: '/Robot_Esqueleto.glb',
 
   animations: {
-    idle: '/animations/Hello.FBX', 
+    idle: '/animations/idle_y_up_Anim.FBX', 
     thinking: '/animations/Pointing_Up.FBX',
     talking: '/animations/Talking.FBX',
     //saludo: '/animations/Hello.FBX',
@@ -11,7 +11,7 @@ export const AVATAR_CONFIG = {
     error: '/animations/Negative.FBX',
     laughing: '/animations/Laughing.FBX',
     //BUGEADA twist: '/animations/Twist.FBX',
-    listening: '/animations/Backflip.FBX'
+    listening: '/animations/Listening_y_up_Anim.FBX'
   },
 
   animationSettings: {

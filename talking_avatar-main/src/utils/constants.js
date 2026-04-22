@@ -7,7 +7,7 @@ export const SESSION_TIMEOUT = 30000; // 30 segundos
 export const PRE_SPEECH_DELAY_MIN = 250; // ms
 export const PRE_SPEECH_DELAY_MAX = 450; // ms
 export const INITIAL_GREETING_DELAY = 3500; // 3.5 segundos
-export const TRANSCRIPT_CONFIRMATION_DELAY = 5000; // 5 segundos
+export const TRANSCRIPT_CONFIRMATION_DELAY = 2500; // 5 segundos
 export const AI_RESPONSE_DELAY = 300; // 300ms
 export const SHORT_INPUT_DELAY = 2000;
 export const TRANSCRIPT_MIN_WORDS = 1;
@@ -33,7 +33,7 @@ export const CANVAS_CONFIG = {
 export const BG_MESH_CONFIG = {
   position: [0, 1.0, -2],
   scale: [5, 5, 1],
-  texture: '/images/bg.webp',
+  texture: '/images/fondoUader.jpeg',
 };
 
 export const ENVIRONMENT_CONFIG = {
