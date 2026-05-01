@@ -17,8 +17,7 @@ export function Canvas3D({ avatarState }) {
           ctx.gl.physicallyCorrectLights = true;
         }}
       >
-        <gridHelper args={[10, 10]} />
-        <axesHelper args={[5]} />
+     
         <PerspectiveCamera
           makeDefault
           fov={CANVAS_CONFIG.camera.fov}
