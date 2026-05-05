@@ -1,21 +1,2202 @@
 [
   {
+    "id": "MAT_001",
+    "tipo": "materia",
+    "nombre": "Metodología de Estudio",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "metodologia de estudio",
+      "me",
+      "metodologia"
+    ],
+    "respuesta": {
+      "corta": "Metodología de Estudio es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_002",
+    "tipo": "materia",
+    "nombre": "Derecho Constitucional",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "derecho constitucional",
+      "dc",
+      "derecho"
+    ],
+    "respuesta": {
+      "corta": "Derecho Constitucional es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_003",
+    "tipo": "materia",
+    "nombre": "Introducción a la Química",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "introduccion a la quimica",
+      "iq"
+    ],
+    "respuesta": {
+      "corta": "Introducción a la Química es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_004",
+    "tipo": "materia",
+    "nombre": "Derechos Humanos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "derechos humanos",
+      "dh",
+      "derechos"
+    ],
+    "respuesta": {
+      "corta": "Derechos Humanos es una materia de 1º año y 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_005",
+    "tipo": "materia",
+    "nombre": "Introducción a la Criminalística",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "introduccion a la criminalistica",
+      "ic"
+    ],
+    "respuesta": {
+      "corta": "Introducción a la Criminalística es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_006",
+    "tipo": "materia",
+    "nombre": "Derecho Civil y Penal en el Peritaje",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "derecho civil y penal en el peritaje",
+      "dcpp",
+      "derecho"
+    ],
+    "respuesta": {
+      "corta": "Derecho Civil y Penal en el Peritaje es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_007",
+    "tipo": "materia",
+    "nombre": "Fotografía Pericial",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fotografia pericial",
+      "fp",
+      "fotografia"
+    ],
+    "respuesta": {
+      "corta": "Fotografía Pericial es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_008",
+    "tipo": "materia",
+    "nombre": "Química I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "quimica i",
+      "quimica 1",
+      "quimica uno",
+      "qi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química I es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_009",
+    "tipo": "materia",
+    "nombre": "Matemática I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "matematica i",
+      "matematica 1",
+      "matematica uno",
+      "mi",
+      "matematica",
+      "mate 1",
+      "mate uno",
+      "mate i"
+    ],
+    "respuesta": {
+      "corta": "Matemática I es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_010",
+    "tipo": "materia",
+    "nombre": "Física I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fisica i",
+      "fisica 1",
+      "fisica uno",
+      "fi",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física I es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_011",
+    "tipo": "materia",
+    "nombre": "Inglés Técnico I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "ingles tecnico i",
+      "ingles tecnico 1",
+      "ingles tecnico uno",
+      "iti",
+      "ingles"
+    ],
+    "respuesta": {
+      "corta": "Inglés Técnico I es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_012",
+    "tipo": "materia",
+    "nombre": "Planimetría",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "planimetria"
+    ],
+    "respuesta": {
+      "corta": "Planimetría es una materia de 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_013",
+    "tipo": "materia",
+    "nombre": "Derecho Procesal Civil y Penal",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "derecho procesal civil y penal",
+      "dpcp",
+      "derecho"
+    ],
+    "respuesta": {
+      "corta": "Derecho Procesal Civil y Penal es una materia de 2º año y 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_014",
+    "tipo": "materia",
+    "nombre": "Video Filmación",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "video filmacion",
+      "vf",
+      "video"
+    ],
+    "respuesta": {
+      "corta": "Video Filmación es una materia de 2º año y 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_015",
+    "tipo": "materia",
+    "nombre": "Informática I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "informatica i",
+      "informatica 1",
+      "informatica uno",
+      "ii",
+      "informatica"
+    ],
+    "respuesta": {
+      "corta": "Informática I es una materia de 2º año y 1º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Matemática, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_016",
+    "tipo": "materia",
+    "nombre": "Inglés Técnico II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "ingles tecnico ii",
+      "ingles tecnico 2",
+      "ingles tecnico dos",
+      "iti",
+      "ingles"
+    ],
+    "respuesta": {
+      "corta": "Inglés Técnico II es una materia de 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_017",
+    "tipo": "materia",
+    "nombre": "Matemática II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "matematica ii",
+      "matematica 2",
+      "matematica dos",
+      "mi",
+      "matematica",
+      "mate 2",
+      "mate dos",
+      "mate ii"
+    ],
+    "respuesta": {
+      "corta": "Matemática II es una materia de 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_018",
+    "tipo": "materia",
+    "nombre": "Física II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "fisica ii",
+      "fisica 2",
+      "fisica dos",
+      "fi",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física II es una materia de 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_019",
+    "tipo": "materia",
+    "nombre": "Balística I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "balistica i",
+      "balistica 1",
+      "balistica uno",
+      "bi",
+      "balistica"
+    ],
+    "respuesta": {
+      "corta": "Balística I es una materia de 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_020",
+    "tipo": "materia",
+    "nombre": "Papiloscopía I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "papiloscopia i",
+      "papiloscopia 1",
+      "papiloscopia uno",
+      "pi",
+      "papiloscopia"
+    ],
+    "respuesta": {
+      "corta": "Papiloscopía I es una materia de 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Papiloscopía.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_021",
+    "tipo": "materia",
+    "nombre": "Química II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "quimica ii",
+      "quimica 2",
+      "quimica dos",
+      "qi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química II es una materia de 2º año que se dicta en: Licenciatura en Criminalística, Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_022",
+    "tipo": "materia",
+    "nombre": "Artes Gráficas",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "artes graficas",
+      "ag",
+      "artes"
+    ],
+    "respuesta": {
+      "corta": "Artes Gráficas es una materia de 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_023",
+    "tipo": "materia",
+    "nombre": "Deontología Profesional",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "deontologia profesional",
+      "dp",
+      "deontologia"
+    ],
+    "respuesta": {
+      "corta": "Deontología Profesional es una materia de 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_024",
+    "tipo": "materia",
+    "nombre": "Epistemología",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "epistemologia"
+    ],
+    "respuesta": {
+      "corta": "Epistemología es una materia de 3º año y 1º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Biología, Profesorado en Matemática, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_025",
+    "tipo": "materia",
+    "nombre": "Accidentología Vial",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "accidentologia vial",
+      "av",
+      "accidentologia"
+    ],
+    "respuesta": {
+      "corta": "Accidentología Vial es una materia de 3º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_026",
+    "tipo": "materia",
+    "nombre": "Balística II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "balistica ii",
+      "balistica 2",
+      "balistica dos",
+      "bi",
+      "balistica"
+    ],
+    "respuesta": {
+      "corta": "Balística II es una materia de 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_027",
+    "tipo": "materia",
+    "nombre": "Papiloscopía II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "papiloscopia ii",
+      "papiloscopia 2",
+      "papiloscopia dos",
+      "pi",
+      "papiloscopia"
+    ],
+    "respuesta": {
+      "corta": "Papiloscopía II es una materia de 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Papiloscopía.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_028",
+    "tipo": "materia",
+    "nombre": "Documentología I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "documentologia i",
+      "documentologia 1",
+      "documentologia uno",
+      "di",
+      "documentologia"
+    ],
+    "respuesta": {
+      "corta": "Documentología I es una materia de 3º año y 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_029",
+    "tipo": "materia",
+    "nombre": "Química III",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica iii",
+      "quimica 3",
+      "quimica tres",
+      "qi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química III es una materia de 3º año que se dicta en: Licenciatura en Criminalística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_030",
+    "tipo": "materia",
+    "nombre": "Informática II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "informatica ii",
+      "informatica 2",
+      "informatica dos",
+      "ii",
+      "informatica"
+    ],
+    "respuesta": {
+      "corta": "Informática II es una materia de 3º año y 2º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Matemática, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_031",
+    "tipo": "materia",
+    "nombre": "Portugués",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "portugues"
+    ],
+    "respuesta": {
+      "corta": "Portugués es una materia de 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Balística, Tecnicatura en Papiloscopía, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_032",
+    "tipo": "materia",
+    "nombre": "Estadística",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "estadistica"
+    ],
+    "respuesta": {
+      "corta": "Estadística es una materia de 4º año y 1º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_033",
+    "tipo": "materia",
+    "nombre": "Psicología General",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "psicologia general",
+      "pg",
+      "psicologia"
+    ],
+    "respuesta": {
+      "corta": "Psicología General es una materia de 4º año y 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Documentología, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_034",
+    "tipo": "materia",
+    "nombre": "Sociología",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "sociologia"
+    ],
+    "respuesta": {
+      "corta": "Sociología es una materia de 4º año y 2º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_035",
+    "tipo": "materia",
+    "nombre": "Metodología de la Investigación",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "metodologia de la investigacion",
+      "mi",
+      "metodologia"
+    ],
+    "respuesta": {
+      "corta": "Metodología de la Investigación es una materia de 4º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial, Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_036",
+    "tipo": "materia",
+    "nombre": "Psicología Social",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "psicologia social",
+      "ps",
+      "psicologia"
+    ],
+    "respuesta": {
+      "corta": "Psicología Social es una materia de 4º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_037",
+    "tipo": "materia",
+    "nombre": "Criminología",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "criminologia"
+    ],
+    "respuesta": {
+      "corta": "Criminología es una materia de 4º año que se dicta en: Licenciatura en Criminalística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_038",
+    "tipo": "materia",
+    "nombre": "Psiquiatría Forense",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "psiquiatria forense",
+      "pf",
+      "psiquiatria"
+    ],
+    "respuesta": {
+      "corta": "Psiquiatría Forense es una materia de 4º año que se dicta en: Licenciatura en Criminalística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_039",
+    "tipo": "materia",
+    "nombre": "Medicina Legal",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "medicina legal",
+      "ml",
+      "medicina"
+    ],
+    "respuesta": {
+      "corta": "Medicina Legal es una materia de 4º año que se dicta en: Licenciatura en Criminalística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_040",
+    "tipo": "materia",
+    "nombre": "Documentología II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "documentologia ii",
+      "documentologia 2",
+      "documentologia dos",
+      "di",
+      "documentologia"
+    ],
+    "respuesta": {
+      "corta": "Documentología II es una materia de 4º año y 3º año que se dicta en: Licenciatura en Criminalística, Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_041",
+    "tipo": "materia",
+    "nombre": "Química IV",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "quimica iv",
+      "quimica 4",
+      "quimica cuatro",
+      "qi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química IV es una materia de 4º año que se dicta en: Licenciatura en Criminalística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_042",
+    "tipo": "materia",
+    "nombre": "Informática III",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "informatica iii",
+      "informatica 3",
+      "informatica tres",
+      "ii",
+      "informatica"
+    ],
+    "respuesta": {
+      "corta": "Informática III es una materia de 4º año que se dicta en: Licenciatura en Criminalística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_043",
+    "tipo": "materia",
+    "nombre": "Proyecto Final",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Criminalística",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "proyecto final",
+      "pf"
+    ],
+    "respuesta": {
+      "corta": "Proyecto Final es una materia de 4º año que se dicta en: Licenciatura en Criminalística, Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_044",
+    "tipo": "materia",
+    "nombre": "Química Orgánica",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "quimica organica",
+      "qo",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Orgánica es una materia de 1º año y 2º año que se dicta en: Tecnicatura en Balística, Tecnicatura en Documentología, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_045",
+    "tipo": "materia",
+    "nombre": "Química Balística",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "quimica balistica",
+      "qb",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Balística es una materia de 2º año que se dicta en: Tecnicatura en Balística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_046",
+    "tipo": "materia",
+    "nombre": "Práctica Pericial Balística",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Balística",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "practica pericial balistica",
+      "ppb"
+    ],
+    "respuesta": {
+      "corta": "Práctica Pericial Balística es una materia de 3º año que se dicta en: Tecnicatura en Balística.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_047",
+    "tipo": "materia",
+    "nombre": "Química Papiloscópica",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica papiloscopica",
+      "qp",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Papiloscópica es una materia de 3º año que se dicta en: Tecnicatura en Papiloscopía.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_048",
+    "tipo": "materia",
+    "nombre": "Práctica Pericial Papiloscópica",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Papiloscopía",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "practica pericial papiloscopica",
+      "ppp"
+    ],
+    "respuesta": {
+      "corta": "Práctica Pericial Papiloscópica es una materia de 3º año que se dicta en: Tecnicatura en Papiloscopía.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_049",
+    "tipo": "materia",
+    "nombre": "Química Documentológica",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "quimica documentologica",
+      "qd",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Documentológica es una materia de 2º año que se dicta en: Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_050",
+    "tipo": "materia",
+    "nombre": "Práctica Pericial Documentológica",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Documentología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "practica pericial documentologica",
+      "ppd"
+    ],
+    "respuesta": {
+      "corta": "Práctica Pericial Documentológica es una materia de 3º año que se dicta en: Tecnicatura en Documentología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_051",
+    "tipo": "materia",
+    "nombre": "Introducción a la Accidentología Vial",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "introduccion a la accidentologia vial",
+      "iav"
+    ],
+    "respuesta": {
+      "corta": "Introducción a la Accidentología Vial es una materia de 1º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_052",
+    "tipo": "materia",
+    "nombre": "Mecánica",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "mecanica"
+    ],
+    "respuesta": {
+      "corta": "Mecánica es una materia de 1º año y 2º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial, Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_053",
+    "tipo": "materia",
+    "nombre": "Portugués I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "portugues i",
+      "portugues 1",
+      "portugues uno",
+      "pi",
+      "portugues"
+    ],
+    "respuesta": {
+      "corta": "Portugués I es una materia de 1º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_054",
+    "tipo": "materia",
+    "nombre": "Química Legal",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "quimica legal",
+      "ql",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Legal es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_055",
+    "tipo": "materia",
+    "nombre": "Fotografía",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "fotografia"
+    ],
+    "respuesta": {
+      "corta": "Fotografía es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_056",
+    "tipo": "materia",
+    "nombre": "Derecho Civil y Penal",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "derecho civil y penal",
+      "dcp",
+      "derecho"
+    ],
+    "respuesta": {
+      "corta": "Derecho Civil y Penal es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_057",
+    "tipo": "materia",
+    "nombre": "Práctica Pericial I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "practica pericial i",
+      "practica pericial 1",
+      "practica pericial uno",
+      "ppi"
+    ],
+    "respuesta": {
+      "corta": "Práctica Pericial I es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_058",
+    "tipo": "materia",
+    "nombre": "Portugués II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "portugues ii",
+      "portugues 2",
+      "portugues dos",
+      "pi",
+      "portugues"
+    ],
+    "respuesta": {
+      "corta": "Portugués II es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_059",
+    "tipo": "materia",
+    "nombre": "Fundamentos de Tránsito y Régimen Vigente",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "fundamentos de transito y regimen vigente",
+      "ftrv"
+    ],
+    "respuesta": {
+      "corta": "Fundamentos de Tránsito y Régimen Vigente es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_060",
+    "tipo": "materia",
+    "nombre": "Práctica Pericial II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "practica pericial ii",
+      "practica pericial 2",
+      "practica pericial dos",
+      "ppi"
+    ],
+    "respuesta": {
+      "corta": "Práctica Pericial II es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_061",
+    "tipo": "materia",
+    "nombre": "Inglés I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "ingles i",
+      "ingles 1",
+      "ingles uno",
+      "ii",
+      "ingles"
+    ],
+    "respuesta": {
+      "corta": "Inglés I es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_062",
+    "tipo": "materia",
+    "nombre": "Prevención y Educación Vial",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "prevencion y educacion vial",
+      "pev",
+      "prevencion"
+    ],
+    "respuesta": {
+      "corta": "Prevención y Educación Vial es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_063",
+    "tipo": "materia",
+    "nombre": "Medicina Legal Aplicada",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "medicina legal aplicada",
+      "mla",
+      "medicina"
+    ],
+    "respuesta": {
+      "corta": "Medicina Legal Aplicada es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_064",
+    "tipo": "materia",
+    "nombre": "Coordinación Siniestral",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "coordinacion siniestral",
+      "cs",
+      "coordinacion"
+    ],
+    "respuesta": {
+      "corta": "Coordinación Siniestral es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_065",
+    "tipo": "materia",
+    "nombre": "Práctica Pericial III",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "practica pericial iii",
+      "practica pericial 3",
+      "practica pericial tres",
+      "ppi"
+    ],
+    "respuesta": {
+      "corta": "Práctica Pericial III es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_066",
+    "tipo": "materia",
+    "nombre": "Inglés II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura en Accidentología Vial",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "ingles ii",
+      "ingles 2",
+      "ingles dos",
+      "ii",
+      "ingles"
+    ],
+    "respuesta": {
+      "corta": "Inglés II es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura en Accidentología Vial.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_067",
+    "tipo": "materia",
+    "nombre": "Derechos Humanos y Tecnología",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "derechos humanos y tecnologia",
+      "dht",
+      "derechos"
+    ],
+    "respuesta": {
+      "corta": "Derechos Humanos y Tecnología es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_068",
+    "tipo": "materia",
+    "nombre": "Fundamentos de Computación",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fundamentos de computacion",
+      "fc"
+    ],
+    "respuesta": {
+      "corta": "Fundamentos de Computación es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_069",
+    "tipo": "materia",
+    "nombre": "Sistemas y Organizaciones",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "sistemas y organizaciones",
+      "so"
+    ],
+    "respuesta": {
+      "corta": "Sistemas y Organizaciones es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
     "id": "PROG1",
     "tipo": "materia",
     "nombre": "Fundamentos de Programación",
-    "keywords": ["prog 1", "programacion 1", "programacion uno", "fundamentos", "intro programacion", "programacion"],
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fundamentos de programacion",
+      "fp",
+      "prog 1",
+      "programacion 1",
+      "programacion uno",
+      "fundamentos",
+      "intro programacion",
+      "programacion"
+    ],
     "respuesta": {
-      "corta": "Fundamentos de Programación es una materia anual de primer año. Es clave para empezar a programar.",
+      "corta": "Fundamentos de Programación es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
       "larga": "Se dicta anualmente en Oro Verde y Concepción. En el primer cuatrimestre se enseñan las bases algorítmicas y luego lenguajes tipados."
+    }
+  },
+  {
+    "id": "MAT_070",
+    "tipo": "materia",
+    "nombre": "Cálculo Diferencial e Integral",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "calculo diferencial e integral",
+      "cdei",
+      "calculo"
+    ],
+    "respuesta": {
+      "corta": "Cálculo Diferencial e Integral es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_071",
+    "tipo": "materia",
+    "nombre": "Lógica y Álgebra",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "logica y algebra",
+      "la",
+      "logica"
+    ],
+    "respuesta": {
+      "corta": "Lógica y Álgebra es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_072",
+    "tipo": "materia",
+    "nombre": "Lecto-Comprensión en Inglés",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 1
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "lecto-comprension en ingles",
+      "li",
+      "lecto-comprension"
+    ],
+    "respuesta": {
+      "corta": "Lecto-Comprensión en Inglés es una materia de 1º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_073",
+    "tipo": "materia",
+    "nombre": "Ecuaciones Diferenciales y Cálculo Multivariado",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "ecuaciones diferenciales y calculo multivariado",
+      "edcm",
+      "ecuaciones"
+    ],
+    "respuesta": {
+      "corta": "Ecuaciones Diferenciales y Cálculo Multivariado es una materia de 2º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_074",
+    "tipo": "materia",
+    "nombre": "Arquitectura de Computadoras",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "arquitectura de computadoras",
+      "ac",
+      "arquitectura",
+      "arqui de computadoras"
+    ],
+    "respuesta": {
+      "corta": "Arquitectura de Computadoras es una materia de 2º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_075",
+    "tipo": "materia",
+    "nombre": "Ingeniería de Software I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "ingenieria de software i",
+      "ingenieria de software 1",
+      "ingenieria de software uno",
+      "isi",
+      "ingenieria"
+    ],
+    "respuesta": {
+      "corta": "Ingeniería de Software I es una materia de 2º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_076",
+    "tipo": "materia",
+    "nombre": "Algoritmos y Estructuras de Datos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "algoritmos y estructuras de datos",
+      "aed",
+      "algoritmos"
+    ],
+    "respuesta": {
+      "corta": "Algoritmos y Estructuras de Datos es una materia de 2º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_077",
+    "tipo": "materia",
+    "nombre": "Programación Orientada a Objetos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "programacion orientada a objetos",
+      "poo",
+      "programacion",
+      "progra orientada a objetos"
+    ],
+    "respuesta": {
+      "corta": "Programación Orientada a Objetos es una materia de 2º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
     }
   },
   {
     "id": "MATDISC",
     "tipo": "materia",
     "nombre": "Matemática Discreta",
-    "keywords": ["matematica discreta", "discreta"],
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 2
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "matematica discreta",
+      "md",
+      "matematica",
+      "mate discreta",
+      "discreta"
+    ],
     "respuesta": {
-      "corta": "Matemática Discreta está en el segundo año de Sistemas. Otorga las bases lógicas para ingeniería de software.",
+      "corta": "Matemática Discreta es una materia de 2º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_078",
+    "tipo": "materia",
+    "nombre": "Paradigmas y Lenguajes",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "paradigmas y lenguajes",
+      "pl",
+      "paradigmas"
+    ],
+    "respuesta": {
+      "corta": "Paradigmas y Lenguajes es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "PROG2",
+    "tipo": "materia",
+    "nombre": "Programación Avanzada",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "programacion avanzada",
+      "pa",
+      "programacion",
+      "progra avanzada",
+      "prog 2",
+      "programacion 2",
+      "avanzada"
+    ],
+    "respuesta": {
+      "corta": "Programación Avanzada es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_079",
+    "tipo": "materia",
+    "nombre": "Taller de Integración",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "taller de integracion",
+      "ti"
+    ],
+    "respuesta": {
+      "corta": "Taller de Integración es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_080",
+    "tipo": "materia",
+    "nombre": "Ingeniería de Software II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "ingenieria de software ii",
+      "ingenieria de software 2",
+      "ingenieria de software dos",
+      "isi",
+      "ingenieria"
+    ],
+    "respuesta": {
+      "corta": "Ingeniería de Software II es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
       "larga": ""
     }
   },
@@ -23,9 +2204,193 @@
     "id": "BD1",
     "tipo": "materia",
     "nombre": "Bases de Datos",
-    "keywords": ["bases", "datos", "bd1", "base de datos"],
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "bases de datos",
+      "bd",
+      "bases",
+      "datos",
+      "bd1",
+      "base de datos"
+    ],
     "respuesta": {
-      "corta": "Bases de Datos se cursa en el tercer año de Sistemas. Ideal para aprender SQL y modelado.",
+      "corta": "Bases de Datos es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_081",
+    "tipo": "materia",
+    "nombre": "Sistemas Operativos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "sistemas operativos",
+      "so"
+    ],
+    "respuesta": {
+      "corta": "Sistemas Operativos es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_082",
+    "tipo": "materia",
+    "nombre": "Probabilidad y Estadística",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "probabilidad y estadistica",
+      "pe",
+      "probabilidad"
+    ],
+    "respuesta": {
+      "corta": "Probabilidad y Estadística es una materia de 3º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_083",
+    "tipo": "materia",
+    "nombre": "Investigación Operativa",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "investigacion operativa",
+      "io",
+      "investigacion"
+    ],
+    "respuesta": {
+      "corta": "Investigación Operativa es una materia de 4º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_084",
+    "tipo": "materia",
+    "nombre": "Optativa I",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "optativa i",
+      "optativa 1",
+      "optativa uno",
+      "oi",
+      "optativa"
+    ],
+    "respuesta": {
+      "corta": "Optativa I es una materia de 4º año y 2º año y 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas, Profesorado en Matemática, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_085",
+    "tipo": "materia",
+    "nombre": "Computación Avanzada",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "computacion avanzada",
+      "ca",
+      "computacion"
+    ],
+    "respuesta": {
+      "corta": "Computación Avanzada es una materia de 4º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_086",
+    "tipo": "materia",
+    "nombre": "Optativa II",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      },
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "optativa ii",
+      "optativa 2",
+      "optativa dos",
+      "oi",
+      "optativa"
+    ],
+    "respuesta": {
+      "corta": "Optativa II es una materia de 4º año y 3º año que se dicta en: Licenciatura en Sistemas de Información, Tecnicatura en Análisis de Sistemas, Profesorado en Matemática, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
       "larga": ""
     }
   },
@@ -33,9 +2398,40 @@
     "id": "IA",
     "tipo": "materia",
     "nombre": "Inteligencia Artificial",
-    "keywords": ["inteligencia artificial", "ia", "artificial"],
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "inteligencia artificial",
+      "ia",
+      "inteligencia",
+      "artificial"
+    ],
     "respuesta": {
-      "corta": "La cursada de Inteligencia Artificial es en el 4º año de la Licenciatura en Sistemas. Muy recomendada.",
+      "corta": "Inteligencia Artificial es una materia de 4º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_087",
+    "tipo": "materia",
+    "nombre": "Bases de Datos Avanzadas",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "bases de datos avanzadas",
+      "bda",
+      "bases"
+    ],
+    "respuesta": {
+      "corta": "Bases de Datos Avanzadas es una materia de 4º año que se dicta en: Licenciatura en Sistemas de Información.",
       "larga": ""
     }
   },
@@ -43,9 +2439,3392 @@
     "id": "REDES",
     "tipo": "materia",
     "nombre": "Comunicaciones y Redes",
-    "keywords": ["redes", "comunicaciones", "telecomunicaciones"],
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "comunicaciones y redes",
+      "cr",
+      "comunicaciones",
+      "redes",
+      "telecomunicaciones"
+    ],
     "respuesta": {
-      "corta": "Comunicaciones y Redes corresponde al cuarto año de la carrera.",
+      "corta": "Comunicaciones y Redes es una materia de 4º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_088",
+    "tipo": "materia",
+    "nombre": "Interfaz Hombre-Máquina",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 5
+      }
+    ],
+    "keywords": [
+      "interfaz hombre-maquina",
+      "ih",
+      "interfaz"
+    ],
+    "respuesta": {
+      "corta": "Interfaz Hombre-Máquina es una materia de 5º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_089",
+    "tipo": "materia",
+    "nombre": "Optativa III",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 5
+      }
+    ],
+    "keywords": [
+      "optativa iii",
+      "optativa 3",
+      "optativa tres",
+      "oi",
+      "optativa"
+    ],
+    "respuesta": {
+      "corta": "Optativa III es una materia de 5º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_090",
+    "tipo": "materia",
+    "nombre": "Seguridad y Auditoría",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 5
+      }
+    ],
+    "keywords": [
+      "seguridad y auditoria",
+      "sa",
+      "seguridad"
+    ],
+    "respuesta": {
+      "corta": "Seguridad y Auditoría es una materia de 5º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_091",
+    "tipo": "materia",
+    "nombre": "Administración de Recursos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 5
+      }
+    ],
+    "keywords": [
+      "administracion de recursos",
+      "ar",
+      "administracion"
+    ],
+    "respuesta": {
+      "corta": "Administración de Recursos es una materia de 5º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_092",
+    "tipo": "materia",
+    "nombre": "Teoría de Computabilidad",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 5
+      }
+    ],
+    "keywords": [
+      "teoria de computabilidad",
+      "tc"
+    ],
+    "respuesta": {
+      "corta": "Teoría de Computabilidad es una materia de 5º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_093",
+    "tipo": "materia",
+    "nombre": "Tesina de Grado",
+    "carreras": [
+      {
+        "carrera": "Licenciatura en Sistemas de Información",
+        "anio": 5
+      }
+    ],
+    "keywords": [
+      "tesina de grado",
+      "tg",
+      "tesina"
+    ],
+    "respuesta": {
+      "corta": "Tesina de Grado es una materia de 5º año que se dicta en: Licenciatura en Sistemas de Información.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_094",
+    "tipo": "materia",
+    "nombre": "Probabilidad y EstadísticaSe observa que la tecnicatura comparte los primeros tres años con la licenciatura",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "probabilidad y estadisticase observa que la tecnicatura comparte los primeros tres anos con la licenciatura",
+      "peoqtcptacl",
+      "probabilidad"
+    ],
+    "respuesta": {
+      "corta": "Probabilidad y EstadísticaSe observa que la tecnicatura comparte los primeros tres años con la licenciatura es una materia de 3º año que se dicta en: Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_095",
+    "tipo": "materia",
+    "nombre": "lo que permite una articulación fluida para los estudiantes que deseen continuar hacia el título de grado después de obtener el de pregrado.Profesorados en Ciencias Exactas y NaturalesLa formación docente en la FCyT Oro Verde se destaca por su rigor académico disciplinar combinado con una sólida base pedagógica",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "lo que permite una articulacion fluida para los estudiantes que deseen continuar hacia el titulo de grado despues de obtener el de pregrado.profesorados en ciencias exactas y naturalesla formacion docente en la fcyt oro verde se destaca por su rigor academico disciplinar combinado con una solida base pedagogica",
+      "lqpuafpeqdchtgdopcenfdfovsdpsradccusbp"
+    ],
+    "respuesta": {
+      "corta": "lo que permite una articulación fluida para los estudiantes que deseen continuar hacia el título de grado después de obtener el de pregrado.Profesorados en Ciencias Exactas y NaturalesLa formación docente en la FCyT Oro Verde se destaca por su rigor académico disciplinar combinado con una sólida base pedagógica es una materia de 3º año que se dicta en: Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_096",
+    "tipo": "materia",
+    "nombre": "habilitando a los egresados para la enseñanza en los niveles secundario y superior.",
+    "carreras": [
+      {
+        "carrera": "Tecnicatura en Análisis de Sistemas",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "habilitando a los egresados para la ensenanza en los niveles secundario y superior.",
+      "hepenss",
+      "habilitando"
+    ],
+    "respuesta": {
+      "corta": "habilitando a los egresados para la enseñanza en los niveles secundario y superior. es una materia de 3º año que se dicta en: Tecnicatura en Análisis de Sistemas.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_097",
+    "tipo": "materia",
+    "nombre": "Matemática",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "matematica",
+      "mate"
+    ],
+    "respuesta": {
+      "corta": "Matemática es una materia de 1º año que se dicta en: Profesorado en Biología, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_098",
+    "tipo": "materia",
+    "nombre": "Química General",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "quimica general",
+      "qg",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química General es una materia de 1º año que se dicta en: Profesorado en Biología, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_099",
+    "tipo": "materia",
+    "nombre": "Física General",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fisica general",
+      "fg",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física General es una materia de 1º año y 2º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_100",
+    "tipo": "materia",
+    "nombre": "Idioma I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "idioma i",
+      "idioma 1",
+      "idioma uno",
+      "ii",
+      "idioma"
+    ],
+    "respuesta": {
+      "corta": "Idioma I es una materia de 1º año que se dicta en: Profesorado en Biología, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_101",
+    "tipo": "materia",
+    "nombre": "Física Biológica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fisica biologica",
+      "fb",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Biológica es una materia de 1º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_102",
+    "tipo": "materia",
+    "nombre": "Química Biológica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "quimica biologica",
+      "qb",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Biológica es una materia de 1º año y 4º año y 2º año que se dicta en: Profesorado en Biología, Profesorado en Química, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_103",
+    "tipo": "materia",
+    "nombre": "Ed. Ambiental",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "ed. ambiental",
+      "ea"
+    ],
+    "respuesta": {
+      "corta": "Ed. Ambiental es una materia de 1º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_104",
+    "tipo": "materia",
+    "nombre": "Idioma II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "idioma ii",
+      "idioma 2",
+      "idioma dos",
+      "ii",
+      "idioma"
+    ],
+    "respuesta": {
+      "corta": "Idioma II es una materia de 1º año y 2º año que se dicta en: Profesorado en Biología, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_105",
+    "tipo": "materia",
+    "nombre": "Principios de Biología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "principios de biologia",
+      "pb"
+    ],
+    "respuesta": {
+      "corta": "Principios de Biología es una materia de 1º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_106",
+    "tipo": "materia",
+    "nombre": "Lectura y Producción de Textos Científicos",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "lectura y produccion de textos cientificos",
+      "lptc",
+      "lectura"
+    ],
+    "respuesta": {
+      "corta": "Lectura y Producción de Textos Científicos es una materia de 1º año que se dicta en: Profesorado en Biología, Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_107",
+    "tipo": "materia",
+    "nombre": "Geomorfología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "geomorfologia"
+    ],
+    "respuesta": {
+      "corta": "Geomorfología es una materia de 2º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_108",
+    "tipo": "materia",
+    "nombre": "Anatomía y Fisiología Vegetal",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "anatomia y fisiologia vegetal",
+      "afv",
+      "anatomia"
+    ],
+    "respuesta": {
+      "corta": "Anatomía y Fisiología Vegetal es una materia de 2º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_109",
+    "tipo": "materia",
+    "nombre": "Pedagogía",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "pedagogia"
+    ],
+    "respuesta": {
+      "corta": "Pedagogía es una materia de 2º año que se dicta en: Profesorado en Biología, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_110",
+    "tipo": "materia",
+    "nombre": "Anatomía y Fisiología Animal",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "anatomia y fisiologia animal",
+      "afa",
+      "anatomia"
+    ],
+    "respuesta": {
+      "corta": "Anatomía y Fisiología Animal es una materia de 2º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_111",
+    "tipo": "materia",
+    "nombre": "Bioestadística",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      },
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "bioestadistica"
+    ],
+    "respuesta": {
+      "corta": "Bioestadística es una materia de 2º año que se dicta en: Profesorado en Biología, Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_112",
+    "tipo": "materia",
+    "nombre": "Sociología de la Ed.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "sociologia de la ed.",
+      "se",
+      "sociologia"
+    ],
+    "respuesta": {
+      "corta": "Sociología de la Ed. es una materia de 2º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_113",
+    "tipo": "materia",
+    "nombre": "Didáctica Gral.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "didactica gral.",
+      "dg",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica Gral. es una materia de 2º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_114",
+    "tipo": "materia",
+    "nombre": "Biología Celular y Molecular",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "biologia celular y molecular",
+      "bcm",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología Celular y Molecular es una materia de 2º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_115",
+    "tipo": "materia",
+    "nombre": "Anatomía y Fisiología Humana",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "anatomia y fisiologia humana",
+      "afh",
+      "anatomia"
+    ],
+    "respuesta": {
+      "corta": "Anatomía y Fisiología Humana es una materia de 2º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_116",
+    "tipo": "materia",
+    "nombre": "Genética",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "genetica"
+    ],
+    "respuesta": {
+      "corta": "Genética es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_117",
+    "tipo": "materia",
+    "nombre": "Biología Vegetal I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "biologia vegetal i",
+      "biologia vegetal 1",
+      "biologia vegetal uno",
+      "bvi",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología Vegetal I es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_118",
+    "tipo": "materia",
+    "nombre": "Biología Animal I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "biologia animal i",
+      "biologia animal 1",
+      "biologia animal uno",
+      "bai",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología Animal I es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_119",
+    "tipo": "materia",
+    "nombre": "Didáctica Cs. Nat.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "didactica cs. nat.",
+      "dcn",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica Cs. Nat. es una materia de 3º año que se dicta en: Profesorado en Biología, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_120",
+    "tipo": "materia",
+    "nombre": "Psicología Ed.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "psicologia ed.",
+      "pe",
+      "psicologia"
+    ],
+    "respuesta": {
+      "corta": "Psicología Ed. es una materia de 3º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_121",
+    "tipo": "materia",
+    "nombre": "Biología Vegetal II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "biologia vegetal ii",
+      "biologia vegetal 2",
+      "biologia vegetal dos",
+      "bvi",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología Vegetal II es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_122",
+    "tipo": "materia",
+    "nombre": "Biología Animal II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "biologia animal ii",
+      "biologia animal 2",
+      "biologia animal dos",
+      "bai",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología Animal II es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_123",
+    "tipo": "materia",
+    "nombre": "Metodología Inv. Ed.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "metodologia inv. ed.",
+      "mie",
+      "metodologia"
+    ],
+    "respuesta": {
+      "corta": "Metodología Inv. Ed. es una materia de 3º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_124",
+    "tipo": "materia",
+    "nombre": "Práctica Docente I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "practica docente i",
+      "practica docente 1",
+      "practica docente uno",
+      "pdi"
+    ],
+    "respuesta": {
+      "corta": "Práctica Docente I es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_125",
+    "tipo": "materia",
+    "nombre": "Ecología General",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "ecologia general",
+      "eg",
+      "ecologia"
+    ],
+    "respuesta": {
+      "corta": "Ecología General es una materia de 3º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_126",
+    "tipo": "materia",
+    "nombre": "Evolución",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "evolucion"
+    ],
+    "respuesta": {
+      "corta": "Evolución es una materia de 4º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_127",
+    "tipo": "materia",
+    "nombre": "Didáctica de la Biología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "didactica de la biologia",
+      "db",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica de la Biología es una materia de 4º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_128",
+    "tipo": "materia",
+    "nombre": "Política Educativa",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "politica educativa",
+      "pe",
+      "politica"
+    ],
+    "respuesta": {
+      "corta": "Política Educativa es una materia de 4º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Profesorado en Física, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_129",
+    "tipo": "materia",
+    "nombre": "Medio Ambiente y Salud",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "medio ambiente y salud",
+      "mas",
+      "medio"
+    ],
+    "respuesta": {
+      "corta": "Medio Ambiente y Salud es una materia de 4º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_130",
+    "tipo": "materia",
+    "nombre": "Análisis Institucional",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "analisis institucional",
+      "ai"
+    ],
+    "respuesta": {
+      "corta": "Análisis Institucional es una materia de 4º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Profesorado en Física, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_131",
+    "tipo": "materia",
+    "nombre": "Taller de Investigación en Enseñanza de Biología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "taller de investigacion en ensenanza de biologia",
+      "tieb"
+    ],
+    "respuesta": {
+      "corta": "Taller de Investigación en Enseñanza de Biología es una materia de 4º año que se dicta en: Profesorado en Biología.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_132",
+    "tipo": "materia",
+    "nombre": "Práctica Docente II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Biología",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "practica docente ii",
+      "practica docente 2",
+      "practica docente dos",
+      "pdi"
+    ],
+    "respuesta": {
+      "corta": "Práctica Docente II es una materia de 4º año que se dicta en: Profesorado en Biología, Profesorado en Matemática, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_133",
+    "tipo": "materia",
+    "nombre": "Lógica y Matemática Elemental",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "logica y matematica elemental",
+      "lme",
+      "logica"
+    ],
+    "respuesta": {
+      "corta": "Lógica y Matemática Elemental es una materia de 1º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_134",
+    "tipo": "materia",
+    "nombre": "Geometría I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "geometria i",
+      "geometria 1",
+      "geometria uno",
+      "gi",
+      "geometria"
+    ],
+    "respuesta": {
+      "corta": "Geometría I es una materia de 1º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_135",
+    "tipo": "materia",
+    "nombre": "Idioma Extranjero I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "idioma extranjero i",
+      "idioma extranjero 1",
+      "idioma extranjero uno",
+      "iei",
+      "idioma"
+    ],
+    "respuesta": {
+      "corta": "Idioma Extranjero I es una materia de 1º año que se dicta en: Profesorado en Matemática, Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_136",
+    "tipo": "materia",
+    "nombre": "Análisis Matemático I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "analisis matematico i",
+      "analisis matematico 1",
+      "analisis matematico uno",
+      "ami"
+    ],
+    "respuesta": {
+      "corta": "Análisis Matemático I es una materia de 1º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_137",
+    "tipo": "materia",
+    "nombre": "Álgebra I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "algebra i",
+      "algebra 1",
+      "algebra uno",
+      "ai",
+      "algebra"
+    ],
+    "respuesta": {
+      "corta": "Álgebra I es una materia de 1º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_138",
+    "tipo": "materia",
+    "nombre": "Idioma Extranjero II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "idioma extranjero ii",
+      "idioma extranjero 2",
+      "idioma extranjero dos",
+      "iei",
+      "idioma"
+    ],
+    "respuesta": {
+      "corta": "Idioma Extranjero II es una materia de 1º año que se dicta en: Profesorado en Matemática, Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_139",
+    "tipo": "materia",
+    "nombre": "Geometría II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "geometria ii",
+      "geometria 2",
+      "geometria dos",
+      "gi",
+      "geometria"
+    ],
+    "respuesta": {
+      "corta": "Geometría II es una materia de 2º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_140",
+    "tipo": "materia",
+    "nombre": "Probabilidad y Estadística I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "probabilidad y estadistica i",
+      "probabilidad y estadistica 1",
+      "probabilidad y estadistica uno",
+      "pei",
+      "probabilidad"
+    ],
+    "respuesta": {
+      "corta": "Probabilidad y Estadística I es una materia de 2º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_141",
+    "tipo": "materia",
+    "nombre": "Álgebra III",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "algebra iii",
+      "algebra 3",
+      "algebra tres",
+      "ai",
+      "algebra"
+    ],
+    "respuesta": {
+      "corta": "Álgebra III es una materia de 2º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_142",
+    "tipo": "materia",
+    "nombre": "Matemática Discreta I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "matematica discreta i",
+      "matematica discreta 1",
+      "matematica discreta uno",
+      "mdi",
+      "matematica",
+      "mate discreta 1",
+      "mate discreta uno",
+      "mate discreta i"
+    ],
+    "respuesta": {
+      "corta": "Matemática Discreta I es una materia de 2º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_143",
+    "tipo": "materia",
+    "nombre": "Sociología Ed.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "sociologia ed.",
+      "se",
+      "sociologia"
+    ],
+    "respuesta": {
+      "corta": "Sociología Ed. es una materia de 2º año que se dicta en: Profesorado en Matemática, Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_144",
+    "tipo": "materia",
+    "nombre": "Geometría III",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "geometria iii",
+      "geometria 3",
+      "geometria tres",
+      "gi",
+      "geometria"
+    ],
+    "respuesta": {
+      "corta": "Geometría III es una materia de 3º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_145",
+    "tipo": "materia",
+    "nombre": "Probabilidad y Estadística II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "probabilidad y estadistica ii",
+      "probabilidad y estadistica 2",
+      "probabilidad y estadistica dos",
+      "pei",
+      "probabilidad"
+    ],
+    "respuesta": {
+      "corta": "Probabilidad y Estadística II es una materia de 3º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_146",
+    "tipo": "materia",
+    "nombre": "Didáctica de la Matemática I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "didactica de la matematica i",
+      "didactica de la matematica 1",
+      "didactica de la matematica uno",
+      "dmi",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica de la Matemática I es una materia de 3º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_147",
+    "tipo": "materia",
+    "nombre": "Seminario",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "seminario"
+    ],
+    "respuesta": {
+      "corta": "Seminario es una materia de 3º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_148",
+    "tipo": "materia",
+    "nombre": "Topología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "topologia"
+    ],
+    "respuesta": {
+      "corta": "Topología es una materia de 3º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_149",
+    "tipo": "materia",
+    "nombre": "Análisis Matemático III",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "analisis matematico iii",
+      "analisis matematico 3",
+      "analisis matematico tres",
+      "ami"
+    ],
+    "respuesta": {
+      "corta": "Análisis Matemático III es una materia de 3º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_150",
+    "tipo": "materia",
+    "nombre": "Práctica I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      },
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "practica i",
+      "practica 1",
+      "practica uno",
+      "pi"
+    ],
+    "respuesta": {
+      "corta": "Práctica I es una materia de 3º año que se dicta en: Profesorado en Matemática, Profesorado en Física, Profesorado en Química, Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_151",
+    "tipo": "materia",
+    "nombre": "Cálculo Superior",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "calculo superior",
+      "cs",
+      "calculo"
+    ],
+    "respuesta": {
+      "corta": "Cálculo Superior es una materia de 4º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_152",
+    "tipo": "materia",
+    "nombre": "Didáctica de la Matemática II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "didactica de la matematica ii",
+      "didactica de la matematica 2",
+      "didactica de la matematica dos",
+      "dmi",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica de la Matemática II es una materia de 4º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_153",
+    "tipo": "materia",
+    "nombre": "Historia y Fundamentos",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "historia y fundamentos",
+      "hf",
+      "historia"
+    ],
+    "respuesta": {
+      "corta": "Historia y Fundamentos es una materia de 4º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_154",
+    "tipo": "materia",
+    "nombre": "Ecuaciones Diferenciales Ordinarias",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "ecuaciones diferenciales ordinarias",
+      "edo",
+      "ecuaciones"
+    ],
+    "respuesta": {
+      "corta": "Ecuaciones Diferenciales Ordinarias es una materia de 4º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_155",
+    "tipo": "materia",
+    "nombre": "Taller de Investigación en Enseñanza de la MatemáticaLa carrera explora áreas avanzadas como la Topología y el Cálculo Superior",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "taller de investigacion en ensenanza de la matematicala carrera explora areas avanzadas como la topologia y el calculo superior",
+      "tiemceaactcs"
+    ],
+    "respuesta": {
+      "corta": "Taller de Investigación en Enseñanza de la MatemáticaLa carrera explora áreas avanzadas como la Topología y el Cálculo Superior es una materia de 4º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_156",
+    "tipo": "materia",
+    "nombre": "asegurando que el docente posea un dominio conceptual que trascienda los contenidos del nivel medio.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Matemática",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "asegurando que el docente posea un dominio conceptual que trascienda los contenidos del nivel medio.",
+      "aqdpudcqtcnm",
+      "asegurando"
+    ],
+    "respuesta": {
+      "corta": "asegurando que el docente posea un dominio conceptual que trascienda los contenidos del nivel medio. es una materia de 4º año que se dicta en: Profesorado en Matemática.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_157",
+    "tipo": "materia",
+    "nombre": "Informática",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "informatica"
+    ],
+    "respuesta": {
+      "corta": "Informática es una materia de 1º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_158",
+    "tipo": "materia",
+    "nombre": "Matemática Gral.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "matematica gral.",
+      "mg",
+      "matematica",
+      "mate gral."
+    ],
+    "respuesta": {
+      "corta": "Matemática Gral. es una materia de 1º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_159",
+    "tipo": "materia",
+    "nombre": "Física Gral. I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fisica gral. i",
+      "fisica gral. 1",
+      "fisica gral. uno",
+      "fgi",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Gral. I es una materia de 1º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_160",
+    "tipo": "materia",
+    "nombre": "Biología I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "biologia i",
+      "biologia 1",
+      "biologia uno",
+      "bi",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología I es una materia de 1º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_161",
+    "tipo": "materia",
+    "nombre": "Lectura Científica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "lectura cientifica",
+      "lc",
+      "lectura"
+    ],
+    "respuesta": {
+      "corta": "Lectura Científica es una materia de 1º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_162",
+    "tipo": "materia",
+    "nombre": "Lab. I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "lab. i",
+      "lab. 1",
+      "lab. uno",
+      "li",
+      "lab."
+    ],
+    "respuesta": {
+      "corta": "Lab. I es una materia de 1º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_163",
+    "tipo": "materia",
+    "nombre": "Física Gral. II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "fisica gral. ii",
+      "fisica gral. 2",
+      "fisica gral. dos",
+      "fgi",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Gral. II es una materia de 2º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_164",
+    "tipo": "materia",
+    "nombre": "Análisis Mat. I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "analisis mat. i",
+      "analisis mat. 1",
+      "analisis mat. uno",
+      "ami"
+    ],
+    "respuesta": {
+      "corta": "Análisis Mat. I es una materia de 2º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_165",
+    "tipo": "materia",
+    "nombre": "Cs. de la Tierra I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "cs. de la tierra i",
+      "cs. de la tierra 1",
+      "cs. de la tierra uno",
+      "cti"
+    ],
+    "respuesta": {
+      "corta": "Cs. de la Tierra I es una materia de 2º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_166",
+    "tipo": "materia",
+    "nombre": "Prob. y Estadística",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "prob. y estadistica",
+      "pe",
+      "prob."
+    ],
+    "respuesta": {
+      "corta": "Prob. y Estadística es una materia de 2º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_167",
+    "tipo": "materia",
+    "nombre": "Cs. de la Tierra II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      },
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "cs. de la tierra ii",
+      "cs. de la tierra 2",
+      "cs. de la tierra dos",
+      "cti"
+    ],
+    "respuesta": {
+      "corta": "Cs. de la Tierra II es una materia de 2º año que se dicta en: Profesorado en Física, Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_168",
+    "tipo": "materia",
+    "nombre": "Taller Integración",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "taller integracion",
+      "ti"
+    ],
+    "respuesta": {
+      "corta": "Taller Integración es una materia de 2º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_169",
+    "tipo": "materia",
+    "nombre": "Laboratorio II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "laboratorio ii",
+      "laboratorio 2",
+      "laboratorio dos",
+      "li",
+      "laboratorio"
+    ],
+    "respuesta": {
+      "corta": "Laboratorio II es una materia de 2º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_170",
+    "tipo": "materia",
+    "nombre": "Física Atómica y Nuclear",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "fisica atomica y nuclear",
+      "fan",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Atómica y Nuclear es una materia de 3º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_171",
+    "tipo": "materia",
+    "nombre": "Lab. III",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "lab. iii",
+      "lab. 3",
+      "lab. tres",
+      "li",
+      "lab."
+    ],
+    "respuesta": {
+      "corta": "Lab. III es una materia de 3º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_172",
+    "tipo": "materia",
+    "nombre": "Calor y Termodinámica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "calor y termodinamica",
+      "ct",
+      "calor"
+    ],
+    "respuesta": {
+      "corta": "Calor y Termodinámica es una materia de 3º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_173",
+    "tipo": "materia",
+    "nombre": "Física Cuántica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "fisica cuantica",
+      "fc",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Cuántica es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_174",
+    "tipo": "materia",
+    "nombre": "Didáctica de la Física",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "didactica de la fisica",
+      "df",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica de la Física es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_175",
+    "tipo": "materia",
+    "nombre": "Física Relativista",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "fisica relativista",
+      "fr",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Relativista es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_176",
+    "tipo": "materia",
+    "nombre": "Taller Inv. Enseñanza de Física",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "taller inv. ensenanza de fisica",
+      "tief"
+    ],
+    "respuesta": {
+      "corta": "Taller Inv. Enseñanza de Física es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_177",
+    "tipo": "materia",
+    "nombre": "Astrofísica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "astrofisica"
+    ],
+    "respuesta": {
+      "corta": "Astrofísica es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_178",
+    "tipo": "materia",
+    "nombre": "Práctica Docente IIEl estudio de la Astrofísica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "practica docente iiel estudio de la astrofisica",
+      "pdiea"
+    ],
+    "respuesta": {
+      "corta": "Práctica Docente IIEl estudio de la Astrofísica es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_179",
+    "tipo": "materia",
+    "nombre": "la Física Cuántica y la Física Relativista en el último año asegura que el profesor esté actualizado con los paradigmas modernos de la ciencia física.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Física",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "la fisica cuantica y la fisica relativista en el ultimo ano asegura que el profesor este actualizado con los paradigmas modernos de la ciencia fisica.",
+      "fcfruaaqpeacpmcf",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "la Física Cuántica y la Física Relativista en el último año asegura que el profesor esté actualizado con los paradigmas modernos de la ciencia física. es una materia de 4º año que se dicta en: Profesorado en Física.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_180",
+    "tipo": "materia",
+    "nombre": "Taller de Lab. Química",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "taller de lab. quimica",
+      "tlq"
+    ],
+    "respuesta": {
+      "corta": "Taller de Lab. Química es una materia de 2º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_181",
+    "tipo": "materia",
+    "nombre": "Química Inorgánica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica inorganica",
+      "qi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Inorgánica es una materia de 3º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_182",
+    "tipo": "materia",
+    "nombre": "Química Orgánica I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica organica i",
+      "quimica organica 1",
+      "quimica organica uno",
+      "qoi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Orgánica I es una materia de 3º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_183",
+    "tipo": "materia",
+    "nombre": "Química Orgánica II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica organica ii",
+      "quimica organica 2",
+      "quimica organica dos",
+      "qoi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Orgánica II es una materia de 3º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_184",
+    "tipo": "materia",
+    "nombre": "Química Industrial",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica industrial",
+      "qi",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Industrial es una materia de 3º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_185",
+    "tipo": "materia",
+    "nombre": "Físico-Química",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "fisico-quimica"
+    ],
+    "respuesta": {
+      "corta": "Físico-Química es una materia de 3º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_186",
+    "tipo": "materia",
+    "nombre": "Didáctica de la Química",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "didactica de la quimica",
+      "dq",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica de la Química es una materia de 4º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_187",
+    "tipo": "materia",
+    "nombre": "Política Ed.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "politica ed.",
+      "pe",
+      "politica"
+    ],
+    "respuesta": {
+      "corta": "Política Ed. es una materia de 4º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_188",
+    "tipo": "materia",
+    "nombre": "Química Ambiental",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "quimica ambiental",
+      "qa",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Ambiental es una materia de 4º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_189",
+    "tipo": "materia",
+    "nombre": "Análisis Inst.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "analisis inst.",
+      "ai"
+    ],
+    "respuesta": {
+      "corta": "Análisis Inst. es una materia de 4º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_190",
+    "tipo": "materia",
+    "nombre": "Química Analítica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "quimica analitica",
+      "qa",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Analítica es una materia de 4º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_191",
+    "tipo": "materia",
+    "nombre": "Taller de Inv. en Enseñanza Química",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Química",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "taller de inv. en ensenanza quimica",
+      "tieq"
+    ],
+    "respuesta": {
+      "corta": "Taller de Inv. en Enseñanza Química es una materia de 4º año que se dicta en: Profesorado en Química.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_192",
+    "tipo": "materia",
+    "nombre": "Química",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química es una materia de 1º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_193",
+    "tipo": "materia",
+    "nombre": "Metrología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "metrologia"
+    ],
+    "respuesta": {
+      "corta": "Metrología es una materia de 1º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_194",
+    "tipo": "materia",
+    "nombre": "Intro. a Tecnología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "intro. a tecnologia",
+      "it",
+      "intro."
+    ],
+    "respuesta": {
+      "corta": "Intro. a Tecnología es una materia de 1º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_195",
+    "tipo": "materia",
+    "nombre": "Técnicas de Representación",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "tecnicas de representacion",
+      "tr",
+      "tecnicas"
+    ],
+    "respuesta": {
+      "corta": "Técnicas de Representación es una materia de 1º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_196",
+    "tipo": "materia",
+    "nombre": "Lectura",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "lectura"
+    ],
+    "respuesta": {
+      "corta": "Lectura es una materia de 1º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_197",
+    "tipo": "materia",
+    "nombre": "Estructura y Resist. de Materiales",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "estructura y resist. de materiales",
+      "erm",
+      "estructura"
+    ],
+    "respuesta": {
+      "corta": "Estructura y Resist. de Materiales es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_198",
+    "tipo": "materia",
+    "nombre": "Gestión Producción",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "gestion produccion",
+      "gp"
+    ],
+    "respuesta": {
+      "corta": "Gestión Producción es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_199",
+    "tipo": "materia",
+    "nombre": "Tecnología Materiales",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "tecnologia materiales",
+      "tm",
+      "tecnologia"
+    ],
+    "respuesta": {
+      "corta": "Tecnología Materiales es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_200",
+    "tipo": "materia",
+    "nombre": "Electricidad y Electrónica",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "electricidad y electronica",
+      "ee",
+      "electricidad"
+    ],
+    "respuesta": {
+      "corta": "Electricidad y Electrónica es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_201",
+    "tipo": "materia",
+    "nombre": "Mecánica Aplicada",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "mecanica aplicada",
+      "ma",
+      "mecanica"
+    ],
+    "respuesta": {
+      "corta": "Mecánica Aplicada es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_202",
+    "tipo": "materia",
+    "nombre": "TIC I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "tic i",
+      "tic 1",
+      "tic uno",
+      "ti"
+    ],
+    "respuesta": {
+      "corta": "TIC I es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_203",
+    "tipo": "materia",
+    "nombre": "Proyecto Tecnológico I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "proyecto tecnologico i",
+      "proyecto tecnologico 1",
+      "proyecto tecnologico uno",
+      "pti"
+    ],
+    "respuesta": {
+      "corta": "Proyecto Tecnológico I es una materia de 2º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_204",
+    "tipo": "materia",
+    "nombre": "Didáctica Tecnología I",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "didactica tecnologia i",
+      "didactica tecnologia 1",
+      "didactica tecnologia uno",
+      "dti",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica Tecnología I es una materia de 3º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_205",
+    "tipo": "materia",
+    "nombre": "Instrumentación y Control",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "instrumentacion y control",
+      "ic",
+      "instrumentacion"
+    ],
+    "respuesta": {
+      "corta": "Instrumentación y Control es una materia de 3º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_206",
+    "tipo": "materia",
+    "nombre": "Procesos Productivos",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "procesos productivos",
+      "pp",
+      "procesos"
+    ],
+    "respuesta": {
+      "corta": "Procesos Productivos es una materia de 3º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_207",
+    "tipo": "materia",
+    "nombre": "TIC II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "tic ii",
+      "tic 2",
+      "tic dos",
+      "ti"
+    ],
+    "respuesta": {
+      "corta": "TIC II es una materia de 3º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_208",
+    "tipo": "materia",
+    "nombre": "Gestión Org.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "gestion org.",
+      "go"
+    ],
+    "respuesta": {
+      "corta": "Gestión Org. es una materia de 3º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_209",
+    "tipo": "materia",
+    "nombre": "Proyecto Tecnológico II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "proyecto tecnologico ii",
+      "proyecto tecnologico 2",
+      "proyecto tecnologico dos",
+      "pti"
+    ],
+    "respuesta": {
+      "corta": "Proyecto Tecnológico II es una materia de 3º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_210",
+    "tipo": "materia",
+    "nombre": "Didáctica Tecnología II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "didactica tecnologia ii",
+      "didactica tecnologia 2",
+      "didactica tecnologia dos",
+      "dti",
+      "didactica"
+    ],
+    "respuesta": {
+      "corta": "Didáctica Tecnología II es una materia de 4º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_211",
+    "tipo": "materia",
+    "nombre": "Biotecnología",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "biotecnologia"
+    ],
+    "respuesta": {
+      "corta": "Biotecnología es una materia de 4º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_212",
+    "tipo": "materia",
+    "nombre": "Economía y Legis.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "economia y legis.",
+      "el",
+      "economia"
+    ],
+    "respuesta": {
+      "corta": "Economía y Legis. es una materia de 4º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_213",
+    "tipo": "materia",
+    "nombre": "Taller Inv. Enseñanza Tec.",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "taller inv. ensenanza tec.",
+      "tiet"
+    ],
+    "respuesta": {
+      "corta": "Taller Inv. Enseñanza Tec. es una materia de 4º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_214",
+    "tipo": "materia",
+    "nombre": "Práctica II",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "practica ii",
+      "practica 2",
+      "practica dos",
+      "pi"
+    ],
+    "respuesta": {
+      "corta": "Práctica II es una materia de 4º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_215",
+    "tipo": "materia",
+    "nombre": "Proyecto Tecnológico III",
+    "carreras": [
+      {
+        "carrera": "Profesorado en Educación Tecnológica",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "proyecto tecnologico iii",
+      "proyecto tecnologico 3",
+      "proyecto tecnologico tres",
+      "pti"
+    ],
+    "respuesta": {
+      "corta": "Proyecto Tecnológico III es una materia de 4º año que se dicta en: Profesorado en Educación Tecnológica.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_216",
+    "tipo": "materia",
+    "nombre": "Biología",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología es una materia de 1º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_217",
+    "tipo": "materia",
+    "nombre": "Física Aplicada",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "fisica aplicada",
+      "fa",
+      "fisica"
+    ],
+    "respuesta": {
+      "corta": "Física Aplicada es una materia de 1º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_218",
+    "tipo": "materia",
+    "nombre": "Introducción a Problemática Ambiental",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 1
+      }
+    ],
+    "keywords": [
+      "introduccion a problematica ambiental",
+      "ipa"
+    ],
+    "respuesta": {
+      "corta": "Introducción a Problemática Ambiental es una materia de 1º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_219",
+    "tipo": "materia",
+    "nombre": "Ecología Gral.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "ecologia gral.",
+      "eg",
+      "ecologia"
+    ],
+    "respuesta": {
+      "corta": "Ecología Gral. es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_220",
+    "tipo": "materia",
+    "nombre": "Epistemología Cs. Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "epistemologia cs. amb.",
+      "eca",
+      "epistemologia"
+    ],
+    "respuesta": {
+      "corta": "Epistemología Cs. Amb. es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_221",
+    "tipo": "materia",
+    "nombre": "Biología Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "biologia amb.",
+      "ba",
+      "biologia"
+    ],
+    "respuesta": {
+      "corta": "Biología Amb. es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_222",
+    "tipo": "materia",
+    "nombre": "Ecología de Sistemas",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "ecologia de sistemas",
+      "es",
+      "ecologia"
+    ],
+    "respuesta": {
+      "corta": "Ecología de Sistemas es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_223",
+    "tipo": "materia",
+    "nombre": "Derecho Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "derecho amb.",
+      "da",
+      "derecho"
+    ],
+    "respuesta": {
+      "corta": "Derecho Amb. es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_224",
+    "tipo": "materia",
+    "nombre": "Educación Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 2
+      }
+    ],
+    "keywords": [
+      "educacion amb.",
+      "ea",
+      "educacion"
+    ],
+    "respuesta": {
+      "corta": "Educación Amb. es una materia de 2º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_225",
+    "tipo": "materia",
+    "nombre": "Química Analítica Ambiental",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "quimica analitica ambiental",
+      "qaa",
+      "quimica"
+    ],
+    "respuesta": {
+      "corta": "Química Analítica Ambiental es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_226",
+    "tipo": "materia",
+    "nombre": "Gestión Recursos Agua",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "gestion recursos agua",
+      "gra"
+    ],
+    "respuesta": {
+      "corta": "Gestión Recursos Agua es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_227",
+    "tipo": "materia",
+    "nombre": "Gestión Recurso Aire",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "gestion recurso aire",
+      "gra"
+    ],
+    "respuesta": {
+      "corta": "Gestión Recurso Aire es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_228",
+    "tipo": "materia",
+    "nombre": "Gestión Recurso Suelo",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "gestion recurso suelo",
+      "grs"
+    ],
+    "respuesta": {
+      "corta": "Gestión Recurso Suelo es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_229",
+    "tipo": "materia",
+    "nombre": "Efluentes Líquidos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "efluentes liquidos",
+      "el",
+      "efluentes"
+    ],
+    "respuesta": {
+      "corta": "Efluentes Líquidos es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_230",
+    "tipo": "materia",
+    "nombre": "Ética y Deontología",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "etica y deontologia",
+      "ed",
+      "etica"
+    ],
+    "respuesta": {
+      "corta": "Ética y Deontología es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_231",
+    "tipo": "materia",
+    "nombre": "Gestión Ambiental",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "gestion ambiental",
+      "ga"
+    ],
+    "respuesta": {
+      "corta": "Gestión Ambiental es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_232",
+    "tipo": "materia",
+    "nombre": "Tratamiento de Residuos Sólidos",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "tratamiento de residuos solidos",
+      "trs",
+      "tratamiento"
+    ],
+    "respuesta": {
+      "corta": "Tratamiento de Residuos Sólidos es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_233",
+    "tipo": "materia",
+    "nombre": "Sist. Medición y Control",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "sist. medicion y control",
+      "smc",
+      "sist."
+    ],
+    "respuesta": {
+      "corta": "Sist. Medición y Control es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_234",
+    "tipo": "materia",
+    "nombre": "Metodología Inv.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 3
+      }
+    ],
+    "keywords": [
+      "metodologia inv.",
+      "mi",
+      "metodologia"
+    ],
+    "respuesta": {
+      "corta": "Metodología Inv. es una materia de 3º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_235",
+    "tipo": "materia",
+    "nombre": "Política Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "politica amb.",
+      "pa",
+      "politica"
+    ],
+    "respuesta": {
+      "corta": "Política Amb. es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_236",
+    "tipo": "materia",
+    "nombre": "Sist. Información Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "sist. informacion amb.",
+      "sia",
+      "sist."
+    ],
+    "respuesta": {
+      "corta": "Sist. Información Amb. es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_237",
+    "tipo": "materia",
+    "nombre": "Geología Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "geologia amb.",
+      "ga",
+      "geologia"
+    ],
+    "respuesta": {
+      "corta": "Geología Amb. es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_238",
+    "tipo": "materia",
+    "nombre": "Ordenación del Territorio",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "ordenacion del territorio",
+      "ot",
+      "ordenacion"
+    ],
+    "respuesta": {
+      "corta": "Ordenación del Territorio es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_239",
+    "tipo": "materia",
+    "nombre": "Toxicología Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "toxicologia amb.",
+      "ta",
+      "toxicologia"
+    ],
+    "respuesta": {
+      "corta": "Toxicología Amb. es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_240",
+    "tipo": "materia",
+    "nombre": "Economía Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "economia amb.",
+      "ea",
+      "economia"
+    ],
+    "respuesta": {
+      "corta": "Economía Amb. es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_241",
+    "tipo": "materia",
+    "nombre": "Desarrollo Sustentable",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "desarrollo sustentable",
+      "ds",
+      "desarrollo"
+    ],
+    "respuesta": {
+      "corta": "Desarrollo Sustentable es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_242",
+    "tipo": "materia",
+    "nombre": "Higiene y Seguridad Amb.",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "higiene y seguridad amb.",
+      "hsa",
+      "higiene"
+    ],
+    "respuesta": {
+      "corta": "Higiene y Seguridad Amb. es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_243",
+    "tipo": "materia",
+    "nombre": "Proyecto Final Integrador",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "proyecto final integrador",
+      "pfi"
+    ],
+    "respuesta": {
+      "corta": "Proyecto Final Integrador es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
+      "larga": ""
+    }
+  },
+  {
+    "id": "MAT_244",
+    "tipo": "materia",
+    "nombre": "Evaluación de Impactos Ambientales",
+    "carreras": [
+      {
+        "carrera": "Licenciatura y Tecnicatura Universitaria en Gestión Ambiental",
+        "anio": 4
+      }
+    ],
+    "keywords": [
+      "evaluacion de impactos ambientales",
+      "eia",
+      "evaluacion"
+    ],
+    "respuesta": {
+      "corta": "Evaluación de Impactos Ambientales es una materia de 4º año que se dicta en: Licenciatura y Tecnicatura Universitaria en Gestión Ambiental.",
       "larga": ""
     }
   }

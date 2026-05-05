@@ -2,12 +2,8 @@ import React, { useEffect, useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 import * as THREE from 'three';
-import { MeshStandardMaterial, MeshPhysicalMaterial, LineBasicMaterial, Vector2 } from 'three';
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
-
 import { AVATAR_CONFIG } from './config';
-
-const _ = require('lodash');
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 
 export default function Avatar({ avatar_url, avatarState }) {
 

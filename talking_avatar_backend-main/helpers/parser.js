@@ -9,18 +9,78 @@ const data = {
   lugares: JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'lugares.json'), 'utf8'))
 };
 
-// Motor unificado de búsqueda
-function buscarEntidad(pregunta, coleccion) {
+function escapeRegex(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Motor unificado de búsqueda con Scoring
+function buscarEntidadScored(pregunta, coleccion) {
   const p = normalizar(pregunta);
+  const pTokens = p.split(' ').filter(t => t.length >= 3 || t === 'ia');
+  
+  let resultados = [];
+
   for (const item of coleccion) {
-    if (item.keywords && item.keywords.some(k => p.includes(k))) {
-      return item;
+    let score = 0;
+    
+    // Alias / Keywords exactos (+8) y parciales (+2)
+    if (item.keywords) {
+       let partialKwMatch = 0;
+       for (const kw of item.keywords) {
+         const kwNorm = normalizar(kw);
+         if (new RegExp(`\\b${escapeRegex(kwNorm)}\\b`, 'i').test(p)) {
+             score += 8;
+         } else {
+             for (const t of pTokens) {
+                 if (new RegExp(`\\b${escapeRegex(t)}\\b`, 'i').test(kwNorm)) {
+                     partialKwMatch = 2; // Solo asigna 2, no acumula por cada kw
+                 }
+             }
+         }
+       }
+       score += partialKwMatch;
     }
-    if (item.nombre && p.includes(normalizar(item.nombre))) {
-      return item;
+    
+    // Nombre exacto (+5) y Token parcial (+2)
+    if (item.nombre) {
+       let partialNameMatch = 0;
+       const nNorm = normalizar(item.nombre);
+       if (new RegExp(`\\b${escapeRegex(nNorm)}\\b`, 'i').test(p)) {
+           score += 5;
+       }
+       for (const t of pTokens) {
+         if (new RegExp(`\\b${escapeRegex(t)}\\b`, 'i').test(nNorm)) {
+             partialNameMatch = 2;
+         }
+       }
+       score += partialNameMatch;
+    }
+    
+    if (score > 0) {
+      resultados.push({ entidad: item, score });
     }
   }
-  return null;
+
+  resultados.sort((a, b) => b.score - a.score);
+  
+  if (resultados.length === 0) return { ganadora: null, multiples: [], confidence: 0 };
+  
+  const topScore = resultados[0].score;
+  const totalScore = resultados.reduce((sum, r) => sum + r.score, 0);
+  const confidence = topScore / totalScore;
+
+  if (resultados.length === 1) {
+      return { ganadora: resultados[0].entidad, multiples: [], confidence };
+  }
+  
+  // Heurística de Victoria Dominante
+  if (resultados[0].score > resultados[1].score + 3) {
+      return { ganadora: resultados[0].entidad, multiples: [], confidence };
+  } else {
+      // Empate técnico -> Ambigüedad
+      const topOpciones = resultados.slice(0, 4).map(r => r.entidad);
+      return { ganadora: null, multiples: topOpciones, confidence };
+  }
 }
 
 function formatearRespuesta(entidad) {
@@ -32,19 +92,19 @@ function formatearRespuesta(entidad) {
 }
 
 function buscarMateria(pregunta) {
-  return buscarEntidad(pregunta, data.materias);
+  return buscarEntidadScored(pregunta, data.materias);
 }
 
 function buscarTramite(pregunta) {
-  return buscarEntidad(pregunta, data.tramites);
+  return buscarEntidadScored(pregunta, data.tramites);
 }
 
 function buscarBeca(pregunta) {
-  return buscarEntidad(pregunta, data.becas);
+  return buscarEntidadScored(pregunta, data.becas);
 }
 
 function buscarLugar(pregunta) {
-  return buscarEntidad(pregunta, data.lugares);
+  return buscarEntidadScored(pregunta, data.lugares);
 }
 
 module.exports = {
