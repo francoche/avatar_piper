@@ -22,8 +22,8 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 40px;
   padding: 40px;
-  width: 800px;
-  max-width: 85vw;
+  width: 700px;
+  max-width: 80vw;
   max-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -127,25 +127,34 @@
 }
 
 .back-btn {
-  background: rgba(2, 132, 199, 0.95);
-  border: 1px solid rgba(56, 189, 248, 0.6);
-  border-radius: 15px;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
   cursor: pointer;
-  padding: 15px 25px;
+  padding: 10px 22px;
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
   user-select: none;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn .icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  line-height: 1;
 }
 
 .back-btn:hover {
-  background: rgba(2, 132, 199, 1);
-  color: #ffffff;
-  border-color: rgba(56, 189, 248, 1);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .speaking-overlay {

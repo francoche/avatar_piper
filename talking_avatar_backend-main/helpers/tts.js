@@ -29,11 +29,16 @@ const textToSpeech = async (text) => {
         const piperExe = path.join(__dirname, '../piper/piper.exe');
         const modelPath = path.join(__dirname, '../piper/es_AR-daniela-high.onnx');
 
-        // Ignoramos stdout/stderr para no acumular buffers de memoria en Node 
-        // y hacer el IPC muchísimo más rápido.
+        // Ajustes para voz robótica:
+        // --length_scale 1.15 (un poco más lento, monótono)
+        // --noise_scale 0.1 (remueve expresividad humana)
+        // --noise_w 0.1 (fonemas planos)
         const child = spawn(piperExe, [
             '--model', modelPath,
-            '--output_file', fullPath
+            '--output_file', fullPath,
+            '--length_scale', '1.1',
+            '--noise_scale', '0.2',
+            '--noise_w', '0.2'
         ], {
             shell: false,
             stdio: ['pipe', 'ignore', 'ignore'] 
@@ -44,17 +49,20 @@ const textToSpeech = async (text) => {
             child.stdin.end();
         });
 
-        child.on('close', (code) => {
+        child.on('exit', (code) => {
             if (code === 0) {
-                const tiempoTTS = (performance.now() - startTTS).toFixed(0);
-                const outPath = `/audio/${filename}`;
-                audioCache.set(text, outPath);
-                
-                console.log(`[MEJORA] Optimización TTS aplicada`);
-                console.log(`[API] 🔊 Piper TTS Generado en ciclo asincrónico directo (${tiempoTTS}ms)`);
-                resolve({
-                    filename: outPath
-                });
+                // Pequeño delay extra para asegurar que Windows haya hecho el flush al disco
+                setTimeout(() => {
+                    const tiempoTTS = (performance.now() - startTTS).toFixed(0);
+                    const outPath = `/audio/${filename}`;
+                    audioCache.set(text, outPath);
+                    
+                    console.log(`[MEJORA] Optimización TTS aplicada`);
+                    console.log(`[API] 🔊 Piper TTS Generado (${tiempoTTS}ms)`);
+                    resolve({
+                        filename: outPath
+                    });
+                }, 150); // 150ms delay
             } else {
                 console.error(`[TTS] Piper falló con código: ${code}`);
                 reject(new Error(`Piper cerró con código: ${code}`));

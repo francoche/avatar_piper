@@ -60,14 +60,14 @@ async function procesarMensaje(prompt, sessionId = 'default-session') {
     } else {
       // 3. Manejo de saludos iniciales o comandos hardcodeados del sistema
       if (prompt === 'initgreeting' || prompt === 'hola' || prompt === 'buenas' || prompt === '__init_greeting__') {
-         const saludoEntry = knowledgeBase.find(q => q.id === 'cito_1');
+         const saludoEntry = knowledgeBase.find(q => q.id === 'cyto_1');
          if (saludoEntry && saludoEntry.answers && saludoEntry.answers.length > 0) {
            responseText = saludoEntry.answers[Math.floor(Math.random() * saludoEntry.answers.length)];
            responseType = 'presentacion_inicial';
            relatedQuestions = saludoEntry.related_questions || [];
            category = saludoEntry.category || '';
          } else {
-           responseText = "Hola, soy CITO, tu asistente virtual institucional.";
+           responseText = "Hola, soy Cyto, tu asistente virtual institucional.";
            responseType = 'presentacion_inicial';
          }
       } else {

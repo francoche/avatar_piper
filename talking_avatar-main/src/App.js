@@ -11,7 +11,7 @@ import { useAudioPlayer } from './hooks/useAudioPlayer';
 import Canvas3D from './components/Canvas3D/Canvas3D';
 import TouchUI from './components/TouchUI/TouchUI';
 
-const SESSION_TIMEOUT_MS = 90000; // 90 segundos
+const SESSION_TIMEOUT_MS = 35000; // 35 segundos
 
 const globalBackgroundStyle = {
   backgroundColor: '#0f172a',
@@ -76,7 +76,7 @@ function App() {
       setText('initgreeting');
       setSpeak(true);
     }
-  }, [hasInteracted, hasStarted, setHasStarted, setText, setSpeak]);
+  }, [hasInteracted, hasStarted, setHasStarted, setIsIntro, setText, setSpeak]);
 
   useEffect(() => {
     resetInactivityTimeout();
@@ -123,15 +123,21 @@ function App() {
     }
   );
 
-  const handleAskQuestion = (qId) => {
-    // Interrumpir intro o cualquier otra interacción previa
+  const handleStopInteraction = useCallback(() => {
     setIsIntro(false);
     setAudioSource(null);
     setPlaying(false);
     if (audioPlayer.current && audioPlayer.current.audioEl.current) {
       audioPlayer.current.audioEl.current.pause();
     }
+    setSpeak(false);
+    setIsListening(false);
     setHasError(false);
+    setCurrentReplyText("");
+  }, [setPlaying, setSpeak, setIsListening, audioPlayer]);
+
+  const handleAskQuestion = (qId) => {
+    handleStopInteraction();
     
     // 1. Estado: listening (800ms)
     setIsListening(true);
@@ -152,7 +158,7 @@ function App() {
     return (
       <div className="start-screen" style={globalBackgroundStyle} onClick={() => setHasInteracted(true)}>
         <div className="start-container">
-          <h1 className="start-title">CITO</h1>
+          <h1 className="start-title">Cyto</h1>
           <p className="start-subtitle">Avatar Interactivo</p>
           <button className="start-button">Tocar para comenzar</button>
         </div>
@@ -163,11 +169,6 @@ function App() {
   return (
     <div className="full" style={globalBackgroundStyle} onTouchStart={() => resetInactivityTimeout(false)} onMouseMove={() => resetInactivityTimeout(false)} onClick={() => resetInactivityTimeout(false)}>
       
-      {/* DEBUG TEMPORAL - Ocultar en producción */}
-      <div style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.8)', color: '#0f0', padding: '10px', zIndex: 9999, fontFamily: 'monospace', fontSize: '14px', borderRadius: '5px' }}>
-        DEBUG AVATAR_STATE: {avatarState}
-      </div>
-
       <TouchUI 
         key={sessionId} 
         avatarState={avatarState} 
@@ -177,6 +178,7 @@ function App() {
         onClearError={handleClearError}
         isIntro={isIntro}
         currentReplyText={currentReplyText}
+        onStopInteraction={handleStopInteraction}
       />
 
       <ReactAudioPlayer
