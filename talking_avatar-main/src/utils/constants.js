@@ -22,11 +22,11 @@ export const AUDIO_RECOGNITION_CONFIG = {
 export const CANVAS_CONFIG = {
   dpr: 2,
   camera: {
-    fov: 40,
-    position: [0, 1.2, 4],
+    fov: 45,
+    position: [0, 0.8, 3.2],
   },
   controls: {
-    target: [0, 1.0, 0],
+    target: [0, 0.5, 0],
   },
 };
 

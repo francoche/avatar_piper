@@ -13,6 +13,7 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
   
   const actions = useRef({});
   const activeAction = useRef(null);
+  const currentAnimationRef = useRef(null);
   const targetState = useRef('idle');
   const baseGroupRef = useRef();
   const jawRotationRef = useRef(0);
@@ -56,7 +57,7 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
 
           // Autoplay inicial
           if (key === 'idle_loop' && !activeAction.current) {
-            playClip('idle_loop', THREE.LoopRepeat, 0);
+            playAnimation('idle_loop', THREE.LoopRepeat, 0);
           }
         }
       } catch (err) {
@@ -75,11 +76,11 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
   }, [mixer, gltf.scene]);
 
   // --- REPRODUCTOR Y MÁQUINA DE ESTADOS ---
-  const playClip = (clipName, loopType = THREE.LoopRepeat, fadeTime = 0.2) => {
+  const playAnimation = (clipName, loopType = THREE.LoopRepeat, fadeTime = 0.3) => {
+    if (currentAnimationRef.current === clipName) return;
+
     const newAction = actions.current[clipName];
     if (!newAction) return;
-
-    if (activeAction.current === newAction) return;
 
     newAction.reset();
     newAction.setLoop(loopType, loopType === THREE.LoopOnce ? 1 : Infinity);
@@ -94,6 +95,7 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
     newAction.play();
     activeAction.current = newAction;
     activeAction.current._clipName = clipName;
+    currentAnimationRef.current = clipName;
     console.log(`[AVATAR] 🎬 Animando: ${clipName}`);
   };
 
@@ -102,32 +104,26 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
     console.log(`[AVATAR] Cambio de estado: ${avatarState}`);
     
     if (avatarState === 'listening') {
-      playClip('listening_enter', THREE.LoopOnce, 0.2);
+      playAnimation('listening_enter', THREE.LoopOnce, 0.3);
     } 
     else if (avatarState === 'thinking') {
-      // Si el backend es rápido, podríamos pasar de idle directo a thinking
-      playClip('thinking_in', THREE.LoopOnce, 0.2);
+      playAnimation('thinking_in', THREE.LoopOnce, 0.3);
     } 
     else if (avatarState === 'talking') {
-      playClip('thinking_out', THREE.LoopOnce, 0.2);
+      playAnimation('thinking_out', THREE.LoopOnce, 0.3);
     } 
     else if (avatarState === 'idle') {
-      if (activeAction.current && activeAction.current._clipName && activeAction.current._clipName.startsWith('talking')) {
-         playClip('talking_out', THREE.LoopOnce, 0.2);
+      if (currentAnimationRef.current && currentAnimationRef.current.startsWith('talking')) {
+         playAnimation('talking_out', THREE.LoopOnce, 0.3);
       } else {
-         playClip('idle_loop', THREE.LoopRepeat, 0.4);
+         playAnimation('idle_loop', THREE.LoopRepeat, 0.4);
       }
     }
   }, [avatarState]);
 
   // Helper to map category to gesture
   const getGestureForCategory = (category) => {
-    if (!category) return null;
-    const cat = category.toLowerCase();
-    if (cat === 'cito') return 'laughing';
-    if (cat.includes('facultad') || cat.includes('servicios') || cat.includes('ubicacion')) return 'pointing_front';
-    if (cat === 'fallback' || cat.includes('error')) return 'negative';
-    return null;
+    return null; // Archivos FBX no existen en este branch
   };
 
   // Manejador de eventos 'finished' para secuenciar in/loop/out y gestos
@@ -138,12 +134,12 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
 
       if (finishedClipName === 'listening_enter') {
         if (targetState.current === 'listening') {
-          playClip('listening_loop', THREE.LoopRepeat, 0.1);
+          playAnimation('listening_loop', THREE.LoopRepeat, 0.3);
         }
       } 
       else if (finishedClipName === 'thinking_in') {
         if (targetState.current === 'thinking') {
-          playClip('thinking_loop', THREE.LoopRepeat, 0.1);
+          playAnimation('thinking_loop', THREE.LoopRepeat, 0.3);
         }
       }
       else if (finishedClipName === 'thinking_out') {
@@ -151,9 +147,9 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
           const gesture = getGestureForCategory(gestureCategory);
           // CITO o FALLBACK entran directo al gesto antes de hablar
           if (gesture === 'laughing' || gesture === 'negative') {
-            playClip(gesture, THREE.LoopOnce, 0.1);
+            playAnimation(gesture, THREE.LoopOnce, 0.3);
           } else {
-            playClip('talking_in', THREE.LoopOnce, 0.1);
+            playAnimation('talking_in', THREE.LoopOnce, 0.3);
           }
         }
       }
@@ -162,23 +158,23 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
           const gesture = getGestureForCategory(gestureCategory);
           // FACULTAD hace el gesto después del talking_in
           if (gesture === 'pointing_front') {
-            playClip(gesture, THREE.LoopOnce, 0.1);
+            playAnimation(gesture, THREE.LoopOnce, 0.3);
           } else {
-            playClip('talking_loop', THREE.LoopRepeat, 0.1);
+            playAnimation('talking_loop', THREE.LoopRepeat, 0.3);
           }
         }
       }
       // Cuando termina cualquier gesto secundario
       else if (['laughing', 'negative', 'pointing_front'].includes(finishedClipName)) {
         if (targetState.current === 'talking') {
-          playClip('talking_loop', THREE.LoopRepeat, 0.2);
+          playAnimation('talking_loop', THREE.LoopRepeat, 0.3);
         } else if (targetState.current === 'idle') {
-          playClip('idle_loop', THREE.LoopRepeat, 0.2);
+          playAnimation('idle_loop', THREE.LoopRepeat, 0.3);
         }
       }
       else if (finishedClipName === 'talking_out') {
         if (targetState.current === 'idle') {
-          playClip('idle_loop', THREE.LoopRepeat, 0.2);
+          playAnimation('idle_loop', THREE.LoopRepeat, 0.3);
         }
       }
     };

@@ -31,9 +31,6 @@ export function Canvas3D({ avatarState, analyserRef, gestureCategory }) {
           />
         </Suspense>
         <Suspense fallback={null}>
-          <Background />
-        </Suspense>
-        <Suspense fallback={null}>
           <Avatar avatarState={avatarState} analyserRef={analyserRef} gestureCategory={gestureCategory} />
         </Suspense>
       </Canvas>

@@ -13,6 +13,15 @@ import TouchUI from './components/TouchUI/TouchUI';
 
 const SESSION_TIMEOUT_MS = 90000; // 90 segundos
 
+const globalBackgroundStyle = {
+  backgroundColor: '#0f172a',
+  backgroundImage: "url('/images/fondoUader.png')",
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundAttachment: 'fixed'
+};
+
 function App() {
   const {
     avatarState,
@@ -32,6 +41,7 @@ function App() {
   const [hasError, setHasError] = useState(false);
   const [isIntro, setIsIntro] = useState(false);
   const [gestureCategory, setGestureCategory] = useState(null);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   const timeoutRef = useRef(null);
 
@@ -58,14 +68,14 @@ function App() {
 
   // Manejar el montaje inicial
   useEffect(() => {
-    if (!hasStarted) {
+    if (hasInteracted && !hasStarted) {
       setSessionId(Math.random().toString(36).substring(2, 9));
       setHasStarted(true);
       setIsIntro(true);
       setText('initgreeting');
       setSpeak(true);
     }
-  }, [hasStarted, setHasStarted, setText, setSpeak]);
+  }, [hasInteracted, hasStarted, setHasStarted, setText, setSpeak]);
 
   useEffect(() => {
     resetInactivityTimeout();
@@ -112,14 +122,12 @@ function App() {
   );
 
   const handleAskQuestion = (qId) => {
-    // Interrumpir intro si aplica
-    if (isIntro) {
-       setIsIntro(false);
-       setAudioSource(null);
-       setPlaying(false);
-       if (audioPlayer.current && audioPlayer.current.audioEl.current) {
-         audioPlayer.current.audioEl.current.pause();
-       }
+    // Interrumpir intro o cualquier otra interacción previa
+    setIsIntro(false);
+    setAudioSource(null);
+    setPlaying(false);
+    if (audioPlayer.current && audioPlayer.current.audioEl.current) {
+      audioPlayer.current.audioEl.current.pause();
     }
     setHasError(false);
     
@@ -138,8 +146,20 @@ function App() {
     resetInactivityTimeout();
   };
 
+  if (!hasInteracted) {
+    return (
+      <div className="start-screen" style={globalBackgroundStyle} onClick={() => setHasInteracted(true)}>
+        <div className="start-container">
+          <h1 className="start-title">CITO</h1>
+          <p className="start-subtitle">Avatar Interactivo</p>
+          <button className="start-button">Tocar para comenzar</button>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="full" onTouchStart={() => resetInactivityTimeout(false)} onMouseMove={() => resetInactivityTimeout(false)} onClick={() => resetInactivityTimeout(false)}>
+    <div className="full" style={globalBackgroundStyle} onTouchStart={() => resetInactivityTimeout(false)} onMouseMove={() => resetInactivityTimeout(false)} onClick={() => resetInactivityTimeout(false)}>
       
       {/* DEBUG TEMPORAL - Ocultar en producción */}
       <div style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.8)', color: '#0f0', padding: '10px', zIndex: 9999, fontFamily: 'monospace', fontSize: '14px', borderRadius: '5px' }}>
