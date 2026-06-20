@@ -1,0 +1,692 @@
+[
+  {
+    "id": "cito_1",
+    "category": "CITO",
+    "question": "¿Quién sos y para qué fuiste creado?",
+    "answers": [
+      "Hola, soy CITO, un avatar interactivo desarrollado por estudiantes y graduados de sistemas de UADER FCyT.",
+      "¡Hola! Mi nombre es CITO y soy el asistente virtual institucional de la FCyT. Fui creado por la comunidad.",
+      "Soy CITO, un avatar desarrollado en la facultad para ayudarte con tus dudas. Fui creado como un proyecto estudiantil."
+    ],
+    "related_questions": [
+      "cito_2",
+      "cito_5",
+      "cito_3"
+    ]
+  },
+  {
+    "id": "cito_2",
+    "category": "CITO",
+    "question": "¿Cómo funcionás y quién te programó?",
+    "answers": [
+      "Fui programado por estudiantes avanzados y graduados de la Licenciatura en Sistemas, utilizando inteligencia artificial y síntesis de voz.",
+      "Mi sistema fue desarrollado íntegramente en la facultad por alumnos y docentes, empleando tecnologías de código abierto.",
+      "Funciono gracias al esfuerzo de estudiantes y graduados de FCyT que diseñaron mi interfaz y mi motor de respuestas."
+    ],
+    "related_questions": [
+      "cito_3",
+      "cito_1",
+      "cito_5"
+    ]
+  },
+  {
+    "id": "cito_3",
+    "category": "CITO",
+    "question": "¿Me podés ayudar a hacer un trámite administrativo?",
+    "answers": [
+      "Puedo guiarte paso a paso sobre cómo realizar tus trámites, pero no puedo acceder a los sistemas administrativos para hacerlos por vos.",
+      "Te proporciono toda la información necesaria para que hagas tus trámites, aunque la gestión final debés hacerla vos o en Alumnado.",
+      "Mi función es orientarte. Te explico los requisitos y los pasos, pero no realizo operaciones en los sistemas de la facultad."
+    ],
+    "related_questions": [
+      "cito_1",
+      "cito_5",
+      "cito_2"
+    ]
+  },
+  {
+    "id": "cito_4",
+    "category": "CITO",
+    "question": "¿Podés responder preguntas sobre cualquier tema?",
+    "answers": [
+      "Solo dispongo de información institucional y académica de UADER FCyT. No estoy programado para conversar sobre temas generales.",
+      "Mi área de conocimiento se limita estrictamente a las carreras, materias, becas y servicios de esta facultad.",
+      "Estoy especializado únicamente en brindar orientación universitaria a los visitantes y estudiantes de la FCyT."
+    ],
+    "related_questions": [
+      "cito_5",
+      "cito_3",
+      "cito_2"
+    ]
+  },
+  {
+    "id": "cito_5",
+    "category": "CITO",
+    "question": "¿Dónde puedo encontrarte normalmente?",
+    "answers": [
+      "Me encuentro habitualmente en los pasillos principales de la sede Oro Verde, disponible en esta pantalla táctil.",
+      "Resido en esta terminal interactiva ubicada en la facultad, siempre dispuesto a ayudar a los ingresantes y visitantes.",
+      "Mi estación habitual está en la sede de Oro Verde, donde podés consultarme tocando la pantalla."
+    ],
+    "related_questions": [
+      "cito_2",
+      "cito_1",
+      "cito_4"
+    ]
+  },
+  {
+    "id": "ana_1",
+    "category": "Analista en Sistemas",
+    "question": "¿De qué trata la carrera de Analista en Sistemas?",
+    "answers": [
+      "Es una carrera enfocada en el desarrollo de software, programación y bases de datos, con una fuerte orientación práctica para el mercado laboral.",
+      "Se centra en formar profesionales capaces de diseñar, programar y mantener sistemas informáticos y aplicaciones.",
+      "La carrera te prepara rápidamente para la industria del software, enseñándote lenguajes de programación y metodologías de desarrollo."
+    ],
+    "related_questions": [
+      "ana_2",
+      "ana_8",
+      "ana_3"
+    ]
+  },
+  {
+    "id": "ana_2",
+    "category": "Analista en Sistemas",
+    "question": "¿Cuánto dura y cuántas materias tiene Analista en Sistemas?",
+    "answers": [
+      "La carrera tiene una duración estimada de tres años, cursando materias de régimen anual y cuatrimestral.",
+      "El plan de estudios está estructurado para completarse en tres años, incluyendo las prácticas profesionales.",
+      "Cursando con regularidad, dura tres años. Es el título intermedio antes de la Licenciatura en Sistemas."
+    ],
+    "related_questions": [
+      "ana_6",
+      "ana_5",
+      "ana_1"
+    ]
+  },
+  {
+    "id": "ana_3",
+    "category": "Analista en Sistemas",
+    "question": "¿Cuáles son las materias principales del primer año?",
+    "answers": [
+      "En primer año cursarás Fundamentos de Programación, Lógica y Álgebra, y Sistemas y Organizaciones, entre otras.",
+      "Las materias troncales iniciales incluyen Matemática, Lógica, y tu primera aproximación a la programación.",
+      "El primer año combina una base matemática como Álgebra y Cálculo, con materias clave como Fundamentos de Programación."
+    ],
+    "related_questions": [
+      "ana_4",
+      "ana_2",
+      "ana_7"
+    ]
+  },
+  {
+    "id": "ana_4",
+    "category": "Analista en Sistemas",
+    "question": "¿Qué lenguajes y conocimientos de programación voy a aprender?",
+    "answers": [
+      "Comenzarás con fundamentos algorítmicos, para luego avanzar hacia la Programación Orientada a Objetos y desarrollo avanzado.",
+      "Aprenderás diferentes paradigmas, comenzando por estructurada y pasando fuertemente por lenguajes orientados a objetos en segundo año.",
+      "Durante la carrera dominarás múltiples lenguajes, adaptándote a las tecnologías más demandadas de desarrollo backend y frontend."
+    ],
+    "related_questions": [
+      "ana_1",
+      "ana_3",
+      "ana_7"
+    ]
+  },
+  {
+    "id": "ana_5",
+    "category": "Analista en Sistemas",
+    "question": "¿Se enseñan bases de datos y sistemas operativos?",
+    "answers": [
+      "Sí, en el tercer año cursarás Bases de Datos y Sistemas Operativos, materias fundamentales para el manejo de información e infraestructura.",
+      "Bases de Datos y Sistemas Operativos son pilares del tercer año, indispensables para el desarrollo de software profesional.",
+      "Por supuesto. Aprenderás a diseñar y consultar bases de datos relacionales y a comprender la arquitectura de los sistemas operativos."
+    ],
+    "related_questions": [
+      "ana_2",
+      "ana_4",
+      "ana_8"
+    ]
+  },
+  {
+    "id": "ana_6",
+    "category": "Analista en Sistemas",
+    "question": "¿Es necesario saber programar antes de empezar la carrera?",
+    "answers": [
+      "No es necesario. La materia Fundamentos de Programación empieza desde cero, enseñando la lógica algorítmica inicial.",
+      "Para nada. El plan de estudios está diseñado para enseñarte a programar desde los conceptos más básicos.",
+      "No se exigen conocimientos previos de programación; aprenderás todo paso a paso durante el primer año."
+    ],
+    "related_questions": [
+      "ana_1",
+      "ana_2",
+      "ana_3"
+    ]
+  },
+  {
+    "id": "ana_7",
+    "category": "Analista en Sistemas",
+    "question": "¿Cuál es el proyecto o materia final para recibirse de Analista?",
+    "answers": [
+      "Para obtener el título debés cursar el Taller de Integración, donde desarrollarás un proyecto de software completo aplicando todo lo aprendido.",
+      "El último paso es el Taller de Integración. En esta materia trabajarás en equipo simulando un entorno real de desarrollo de software.",
+      "Te recibirás tras aprobar el Taller de Integración, un espacio donde integrarás conocimientos de programación, bases de datos e ingeniería."
+    ],
+    "related_questions": [
+      "ana_3",
+      "ana_8",
+      "ana_2"
+    ]
+  },
+  {
+    "id": "ana_8",
+    "category": "Analista en Sistemas",
+    "question": "¿Puedo seguir estudiando después de recibirme de Analista?",
+    "answers": [
+      "Sí, el título de Analista es intermedio. Podés continuar dos años más y obtener el título de grado de Licenciado en Sistemas.",
+      "Totalmente. Analista corresponde a los primeros tres años de la Licenciatura. Podés seguir cursando directamente el cuarto año.",
+      "Exacto. Al ser un título intermedio, te permite trabajar profesionalmente mientras completás los dos años restantes para la Licenciatura."
+    ],
+    "related_questions": [
+      "ana_3",
+      "ana_2",
+      "ana_7"
+    ]
+  },
+  {
+    "id": "lic_1",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿En qué se diferencia la Licenciatura del título de Analista?",
+    "answers": [
+      "La Licenciatura profundiza en áreas como Inteligencia Artificial, Redes, Seguridad e Investigación, formando un perfil de liderazgo y dirección.",
+      "Mientras Analista se centra en la construcción de software, la Licenciatura aborda la arquitectura, gestión de proyectos y tecnologías avanzadas.",
+      "El título de grado te habilita para investigar, realizar peritajes y dirigir proyectos informáticos complejos, a diferencia de la tecnicatura."
+    ],
+    "related_questions": [
+      "lic_3",
+      "lic_7",
+      "lic_2"
+    ]
+  },
+  {
+    "id": "lic_2",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿Cuánto dura la Licenciatura en Sistemas de Información?",
+    "answers": [
+      "Tiene una duración de cinco años en total, incluyendo la etapa del título intermedio y la defensa de la tesina.",
+      "La currícula completa está planificada para realizarse en cinco años de cursado teórico y práctico.",
+      "El trayecto formativo completo para alcanzar el grado de Licenciado dura cinco años lectivos."
+    ],
+    "related_questions": [
+      "lic_4",
+      "lic_7",
+      "lic_3"
+    ]
+  },
+  {
+    "id": "lic_3",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿Cuáles son las materias de los últimos años?",
+    "answers": [
+      "En cuarto y quinto año verás Inteligencia Artificial, Redes, Auditoría, Teoría de Computabilidad e Interfaz Hombre-Máquina.",
+      "El ciclo superior incluye Comunicaciones y Redes, Inteligencia Artificial, Seguridad Informática y diversas materias optativas.",
+      "Cursarás materias avanzadas orientadas a la investigación y gestión tecnológica, además del desarrollo de tu tesina."
+    ],
+    "related_questions": [
+      "lic_6",
+      "lic_4",
+      "lic_2"
+    ]
+  },
+  {
+    "id": "lic_4",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿Se estudian temas de Inteligencia Artificial y Redes?",
+    "answers": [
+      "Sí, en cuarto año existen materias específicas y obligatorias dedicadas a la Inteligencia Artificial y a Comunicaciones y Redes.",
+      "Ambos son pilares del cuarto año. Aprenderás sobre redes informáticas complejas y fundamentos de Inteligencia Artificial.",
+      "Definitivamente. La currícula incluye fuerte formación en infraestructura de redes y algoritmos de inteligencia artificial."
+    ],
+    "related_questions": [
+      "lic_5",
+      "lic_2",
+      "lic_7"
+    ]
+  },
+  {
+    "id": "lic_5",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿Se enseña sobre seguridad informática y auditoría?",
+    "answers": [
+      "Sí, en quinto año se cursa la materia Seguridad y Auditoría, fundamental para proteger sistemas y realizar peritajes.",
+      "La currícula incluye formación específica en seguridad de la información y técnicas de auditoría de sistemas en el último año.",
+      "Aprenderás a proteger infraestructuras tecnológicas y a auditar sistemas informáticos como parte de la formación final."
+    ],
+    "related_questions": [
+      "lic_2",
+      "lic_1",
+      "lic_6"
+    ]
+  },
+  {
+    "id": "lic_6",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿Qué materias optativas puedo elegir en la carrera?",
+    "answers": [
+      "Podés elegir entre opciones como Diseño de UX/UI, Desarrollo Móvil, Bases de Datos NoSQL y Patrones de Arquitectura.",
+      "La oferta de optativas se actualiza e incluye temas modernos como desarrollo para celulares, diseño de interfaces y gestión tecnológica.",
+      "Existen varias materias electivas que te permiten especializarte en experiencia de usuario, nuevas bases de datos o programación móvil."
+    ],
+    "related_questions": [
+      "lic_7",
+      "lic_3",
+      "lic_2"
+    ]
+  },
+  {
+    "id": "lic_7",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿Qué es y cómo se realiza la tesina de grado final?",
+    "answers": [
+      "La tesina es un trabajo de investigación o desarrollo innovador que realizás con la guía de un director para obtener tu título de grado.",
+      "Es el proyecto final donde aplicás todos los conocimientos de la carrera para resolver un problema complejo o aportar a la investigación.",
+      "Se trata de un desarrollo profundo, documentado y defendido ante un tribunal, que corona tus cinco años de estudio."
+    ],
+    "related_questions": [
+      "lic_1",
+      "lic_2",
+      "lic_6"
+    ]
+  },
+  {
+    "id": "lic_8",
+    "category": "Licenciatura en Sistemas",
+    "question": "¿El título de Licenciado tiene validez y reconocimiento nacional?",
+    "answers": [
+      "Sí, el título es oficial, emitido por una universidad pública y tiene validez en todo el territorio nacional.",
+      "Es un título de grado universitario con pleno reconocimiento oficial por parte del Ministerio de Educación de la Nación.",
+      "Absolutamente. Al graduarte obtenés un título de grado con alcance nacional para ejercer en cualquier provincia del país."
+    ],
+    "related_questions": [
+      "lic_6",
+      "lic_2",
+      "lic_4"
+    ]
+  },
+  {
+    "id": "trabajo_1",
+    "category": "Salida Laboral",
+    "question": "¿En qué lugares puede trabajar un Analista o Licenciado en Sistemas?",
+    "answers": [
+      "Podés trabajar en empresas de desarrollo de software, bancos, áreas tecnológicas del gobierno o creando tu propia startup.",
+      "El campo es amplísimo: consultoras tecnológicas, empresas de ciberseguridad, centros de investigación o como profesional independiente.",
+      "Tanto empresas locales como corporaciones internacionales buscan constantemente perfiles formados en nuestra facultad."
+    ],
+    "related_questions": [
+      "trabajo_5",
+      "trabajo_2",
+      "trabajo_3"
+    ]
+  },
+  {
+    "id": "trabajo_2",
+    "category": "Salida Laboral",
+    "question": "¿Qué demanda laboral tiene el sector informático hoy en día?",
+    "answers": [
+      "La demanda es altísima. Hay pleno empleo en el sector tecnológico y una necesidad constante de profesionales capacitados.",
+      "El mercado laboral informático está en constante crecimiento, ofreciendo excelentes salarios y condiciones de contratación.",
+      "Es una de las industrias con mayor demanda a nivel mundial. La inserción laboral suele ser muy rápida, incluso antes de graduarse."
+    ],
+    "related_questions": [
+      "trabajo_1",
+      "trabajo_5",
+      "trabajo_6"
+    ]
+  },
+  {
+    "id": "trabajo_3",
+    "category": "Salida Laboral",
+    "question": "¿Puedo trabajar exclusivamente como desarrollador de software o programador?",
+    "answers": [
+      "Por supuesto. Muchos graduados eligen dedicar su carrera exclusivamente a la programación backend, frontend o móvil.",
+      "Sí, la formación técnica es muy sólida, lo que te permite desempeñarte como desarrollador senior en cualquier tecnología.",
+      "Es una de las salidas laborales más comunes y mejor remuneradas. Estarás preparado para codificar en múltiples plataformas."
+    ],
+    "related_questions": [
+      "trabajo_6",
+      "trabajo_4",
+      "trabajo_7"
+    ]
+  },
+  {
+    "id": "trabajo_4",
+    "category": "Salida Laboral",
+    "question": "¿Puedo especializarme en seguridad informática o inteligencia artificial?",
+    "answers": [
+      "Sí, el título de Licenciado te da la base necesaria para especializarte en ciberseguridad, machine learning o ciencia de datos.",
+      "La formación de grado incluye estas temáticas, permitiéndote luego realizar posgrados o certificaciones en esas áreas específicas.",
+      "Muchos graduados se desempeñan hoy como auditores de seguridad o ingenieros de datos gracias a la base obtenida en la carrera."
+    ],
+    "related_questions": [
+      "trabajo_6",
+      "trabajo_5",
+      "trabajo_7"
+    ]
+  },
+  {
+    "id": "trabajo_5",
+    "category": "Salida Laboral",
+    "question": "¿La facultad ofrece pasantías laborales mientras estudio?",
+    "answers": [
+      "Sí, la secretaría de extensión publica constantemente convocatorias a pasantías rentadas en empresas e instituciones gubernamentales.",
+      "Existen convenios de pasantías educativas que te permiten ganar experiencia laboral real mientras cursás tus materias.",
+      "Podés realizar pasantías en el polo tecnológico local, lo cual es una excelente forma de insertarte en el mercado antes de recibirte."
+    ],
+    "related_questions": [
+      "trabajo_2",
+      "trabajo_7",
+      "trabajo_1"
+    ]
+  },
+  {
+    "id": "trabajo_6",
+    "category": "Salida Laboral",
+    "question": "¿Cuáles son los requisitos básicos para acceder a una pasantía?",
+    "answers": [
+      "Debés ser alumno regular, mayor de 18 años, y generalmente tener al menos el primer año aprobado.",
+      "Se requiere mantener la regularidad académica y haber aprobado materias fundamentales según la búsqueda de la empresa.",
+      "Los requisitos varían por convocatoria, pero el estándar es ser alumno regular activo con parte de la carrera ya avanzada."
+    ],
+    "related_questions": [
+      "trabajo_2",
+      "trabajo_1",
+      "trabajo_3"
+    ]
+  },
+  {
+    "id": "trabajo_7",
+    "category": "Salida Laboral",
+    "question": "¿Es posible trabajar de forma independiente o freelance?",
+    "answers": [
+      "Sí, el desarrollo de software es ideal para el trabajo freelance, permitiéndote tener clientes en todo el mundo de forma remota.",
+      "Muchísimos egresados optan por el trabajo independiente, ofreciendo servicios de consultoría, auditoría o desarrollo a medida.",
+      "La carrera te brinda las herramientas para emprender tu propia empresa tecnológica o trabajar remotamente como freelancer."
+    ],
+    "related_questions": [
+      "trabajo_1",
+      "trabajo_2",
+      "trabajo_3"
+    ]
+  },
+  {
+    "id": "ingreso_1",
+    "category": "Ingreso",
+    "question": "¿Cuáles son los pasos generales para inscribirse a la facultad?",
+    "answers": [
+      "Primero completás el formulario web de preinscripción y luego entregás la documentación en papel en la oficina de Alumnado.",
+      "El proceso consta de una inscripción virtual online, seguida de la presentación de tu legajo físico en la sede elegida.",
+      "Tenés que registrarte en el sistema online cuando se abren las inscripciones, imprimir la planilla y llevarla junto con tus documentos a la facultad."
+    ],
+    "related_questions": [
+      "ingreso_4",
+      "ingreso_5",
+      "ingreso_3"
+    ]
+  },
+  {
+    "id": "ingreso_2",
+    "category": "Ingreso",
+    "question": "¿Qué documentación personal y académica necesito presentar?",
+    "answers": [
+      "Necesitás fotocopia de DNI, partida de nacimiento legalizada, título secundario, fotos carnet y constancia de grupo sanguíneo.",
+      "Debés armar un legajo con tu DNI, certificado de estudios secundarios, fotos, partida de nacimiento y grupo sanguíneo.",
+      "Presentá tu título secundario o constancia de trámite, fotos 4x4, copia de DNI, acta de nacimiento y tu factor sanguíneo."
+    ],
+    "related_questions": [
+      "ingreso_6",
+      "ingreso_7",
+      "ingreso_8"
+    ]
+  },
+  {
+    "id": "ingreso_3",
+    "category": "Ingreso",
+    "question": "¿Tiene algún costo mensual cursar las carreras o es gratuito?",
+    "answers": [
+      "Es completamente gratuito. Al ser una universidad pública no se abona inscripción ni cuotas mensuales.",
+      "La educación en UADER FCyT es libre y gratuita. No existen aranceles por cursar o rendir materias.",
+      "Estudiar acá no tiene ningún costo. Defendemos el acceso público, gratuito e irrestricto a la educación superior."
+    ],
+    "related_questions": [
+      "ingreso_4",
+      "ingreso_6",
+      "ingreso_5"
+    ]
+  },
+  {
+    "id": "ingreso_4",
+    "category": "Ingreso",
+    "question": "¿De qué trata el curso de ingreso a la vida universitaria (IVU)?",
+    "answers": [
+      "Es un cursillo presencial de un mes de duración destinado a nivelar conocimientos y ambientarte a la dinámica de la facultad.",
+      "El IVU es una instancia introductoria donde repasarás conceptos básicos y conocerás cómo funciona la universidad.",
+      "Es un mes de introducción donde verás módulos de matemática y técnicas de estudio para iniciar la carrera con buena base."
+    ],
+    "related_questions": [
+      "ingreso_5",
+      "ingreso_2",
+      "ingreso_8"
+    ]
+  },
+  {
+    "id": "ingreso_5",
+    "category": "Ingreso",
+    "question": "¿El curso de ingreso es eliminatorio o nivelatorio?",
+    "answers": [
+      "El curso es estrictamente nivelatorio y de asistencia obligatoria, pero no es eliminatorio.",
+      "Su objetivo es ayudarte, por lo que no es eliminatorio. Se exige cumplir con la asistencia y las actividades propuestas.",
+      "No hay exámenes eliminatorios para ingresar. El cursillo busca diagnosticar y nivelar a todos los ingresantes por igual."
+    ],
+    "related_questions": [
+      "ingreso_7",
+      "ingreso_3",
+      "ingreso_1"
+    ]
+  },
+  {
+    "id": "ingreso_6",
+    "category": "Ingreso",
+    "question": "¿Puedo homologar el ingreso si ya estudié en otra universidad?",
+    "answers": [
+      "Sí, si aprobaste cursos de ingreso similares o materias en otra universidad pública, podés solicitar la eximición del IVU.",
+      "Presentando el certificado analítico de tus estudios superiores previos, Alumnado puede otorgarte la homologación del curso.",
+      "Quienes provienen de otras carreras de nivel superior suelen poder homologar el ingreso mediante un trámite administrativo."
+    ],
+    "related_questions": [
+      "ingreso_1",
+      "ingreso_8",
+      "ingreso_2"
+    ]
+  },
+  {
+    "id": "ingreso_7",
+    "category": "Ingreso",
+    "question": "¿Puedo ingresar si soy mayor de 25 años y no terminé el secundario?",
+    "answers": [
+      "Sí, la Ley de Educación Superior permite el ingreso de mayores de 25 años sin secundario aprobando un examen de competencia y el ingreso.",
+      "Podés hacerlo amparado en el Artículo 7 de la ley. Deberás demostrar preparación mediante una evaluación y el curso obligatorio.",
+      "Está permitido. Se requiere presentar certificado de primaria, ser mayor de 25 años y superar las instancias de nivelación de la facultad."
+    ],
+    "related_questions": [
+      "ingreso_4",
+      "ingreso_3",
+      "ingreso_6"
+    ]
+  },
+  {
+    "id": "ingreso_8",
+    "category": "Ingreso",
+    "question": "¿Tengo que rendir algún examen riguroso de matemática para entrar?",
+    "answers": [
+      "No hay examen de ingreso eliminatorio. El curso de ingreso repasa matemática básica, pero tu lugar en la carrera está asegurado.",
+      "El único requisito es el secundario completo. Las evaluaciones del curso de ingreso son de diagnóstico para ayudarte a mejorar.",
+      "No existen filtros matemáticos previos. Aprenderás lo necesario en el cursillo y luego en las materias regulares de la carrera."
+    ],
+    "related_questions": [
+      "ingreso_1",
+      "ingreso_2",
+      "ingreso_3"
+    ]
+  },
+  {
+    "id": "serv_1",
+    "category": "Facultad y Servicios",
+    "question": "¿Qué significa UADER FCyT y cuál es su misión?",
+    "answers": [
+      "Significa Facultad de Ciencia y Tecnología de la Universidad Autónoma de Entre Ríos. Su misión es democratizar el conocimiento científico regional.",
+      "Somos la facultad pública provincial enfocada en la innovación técnica y la educación en ciencias para el desarrollo productivo.",
+      "La FCyT es la unidad académica de la UADER encargada de la educación gratuita en disciplinas informáticas, ambientales y profesorados científicos."
+    ],
+    "related_questions": [
+      "serv_3",
+      "serv_4",
+      "serv_7"
+    ]
+  },
+  {
+    "id": "serv_2",
+    "category": "Facultad y Servicios",
+    "question": "¿Dónde está ubicada físicamente la sede de Oro Verde?",
+    "answers": [
+      "Se encuentra en el campus de Oro Verde, sobre la Ruta Provincial Número 11, en el kilómetro 10.5.",
+      "Nuestra sede central está localizada en la ciudad universitaria de Oro Verde, a pocos kilómetros de Paraná, sobre la Ruta 11.",
+      "La sede principal funciona en el polo educativo de Oro Verde, compartiendo el predio con otras facultades en el Kilómetro 10.5."
+    ],
+    "related_questions": [
+      "serv_1",
+      "serv_7",
+      "serv_3"
+    ]
+  },
+  {
+    "id": "serv_3",
+    "category": "Facultad y Servicios",
+    "question": "¿Qué otras carreras se dictan en la sede además de Sistemas?",
+    "answers": [
+      "Se dictan la Licenciatura en Criminalística, Gestión Ambiental, Accidentología Vial y diversos profesorados en ciencias exactas.",
+      "Además de informática, la oferta incluye peritajes como Criminalística y Papiloscopía, Gestión Ambiental y profesorados como Biología y Matemática.",
+      "Podés estudiar también Criminalística, Documentología, y profesorados universitarios orientados a la ciencia y la tecnología."
+    ],
+    "related_questions": [
+      "serv_5",
+      "serv_7",
+      "serv_10"
+    ]
+  },
+  {
+    "id": "serv_4",
+    "category": "Facultad y Servicios",
+    "question": "¿Qué es el sistema SIU Guaraní y para qué me sirve?",
+    "answers": [
+      "El SIU Guaraní es el sistema de autogestión donde te inscribís a materias, te anotás a rendir exámenes y ves tu historia académica.",
+      "Es la plataforma virtual oficial donde realizás todos tus trámites como estudiante: inscripciones, solicitud de certificados y notas.",
+      "Es tu legajo digital. A través del SIU Guaraní gestionás toda tu vida universitaria desde la inscripción hasta la solicitud del título."
+    ],
+    "related_questions": [
+      "serv_8",
+      "serv_5",
+      "serv_6"
+    ]
+  },
+  {
+    "id": "serv_5",
+    "category": "Facultad y Servicios",
+    "question": "¿Cómo hago para recuperar mi clave del SIU Guaraní si me la olvido?",
+    "answers": [
+      "En la pantalla de inicio del SIU, hacé clic en 'Olvidé mi contraseña', ingresá tu DNI y recibirás un enlace en tu correo electrónico.",
+      "Utilizá la opción de recuperación en la portada del sistema. Si el correo no te llega, deberás solicitar el blanqueo en la oficina de Alumnado.",
+      "Ingresá tu número de DNI en el recuperador automático del sistema para que te envíen instrucciones por mail a tu cuenta registrada."
+    ],
+    "related_questions": [
+      "serv_8",
+      "serv_4",
+      "serv_3"
+    ]
+  },
+  {
+    "id": "serv_6",
+    "category": "Facultad y Servicios",
+    "question": "¿Qué tipos de becas o ayudas económicas puedo solicitar?",
+    "answers": [
+      "Podés postularte a las becas Progresar, becas Manuel Belgrano, becas internas de la UADER y al Instituto Becario Provincial.",
+      "Existen varias líneas de apoyo económico: becas nacionales como la Belgrano para sistemas, becas de la universidad y ayudas provinciales.",
+      "El área de Bienestar Estudiantil te asiste para gestionar becas Progresar, Manuel Belgrano y otras ayudas institucionales disponibles."
+    ],
+    "related_questions": [
+      "serv_4",
+      "serv_1",
+      "serv_5"
+    ]
+  },
+  {
+    "id": "serv_7",
+    "category": "Facultad y Servicios",
+    "question": "¿Cómo funciona el comedor universitario y quiénes pueden ir?",
+    "answers": [
+      "Todos los alumnos regulares tienen acceso al comedor ubicado en Paraná, reservando su menú subsidiado diariamente por WhatsApp.",
+      "Podés almorzar un menú completo a un valor estudiantil muy económico. Requiere reservar turno temprano y presentar constancia de alumno.",
+      "El comedor universitario ofrece bandejas subsidiadas para estudiantes de la facultad que realicen su reserva diaria antes de las 9 de la mañana."
+    ],
+    "related_questions": [
+      "serv_5",
+      "serv_1",
+      "serv_10"
+    ]
+  },
+  {
+    "id": "serv_8",
+    "category": "Facultad y Servicios",
+    "question": "¿Qué diferencia hay entre ser alumno regular y alumno libre?",
+    "answers": [
+      "El alumno regular aprobó la cursada y tiene facilidades para rendir. El alumno libre perdió esa condición y rinde exámenes mucho más exigentes.",
+      "La regularidad dura dos años académicos y permite rendir finales regulares. Si vence, pasás a estado libre y el examen incluye más instancias de evaluación.",
+      "Mantener la regularidad de una materia facilita su examen final. Como libre debés demostrar un dominio exhaustivo de todo el programa sin haber cursado."
+    ],
+    "related_questions": [
+      "serv_3",
+      "serv_5",
+      "serv_6"
+    ]
+  },
+  {
+    "id": "serv_9",
+    "category": "Facultad y Servicios",
+    "question": "¿Existen clases de consulta o tutorías si me cuesta alguna materia?",
+    "answers": [
+      "Sí, la facultad ofrece tutorías de acompañamiento gratuitas, brindadas por docentes o alumnos avanzados, para superar materias complejas.",
+      "Contamos con un sistema de tutorías pares e institucionales para apoyarte académicamente si tenés dificultades en materias como Matemática o Programación.",
+      "Todas las materias tienen clases semanales de consulta y, además, podés acceder a tutorías pedagógicas del área de Bienestar Estudiantil."
+    ],
+    "related_questions": [
+      "serv_4",
+      "serv_5",
+      "serv_3"
+    ]
+  },
+  {
+    "id": "serv_10",
+    "category": "Facultad y Servicios",
+    "question": "¿La facultad cuenta con laboratorios de investigación y bibliotecas?",
+    "answers": [
+      "La sede Oro Verde posee amplios laboratorios de informática y una biblioteca centralizada con extenso material de consulta y préstamo.",
+      "Contamos con varios laboratorios de tecnología e investigación activa, y una biblioteca física y digital de libre acceso para los estudiantes.",
+      "Sí, disponemos de centros de cómputos equipados, laboratorios de investigación y una biblioteca que atiende en horario corrido."
+    ],
+    "related_questions": [
+      "serv_3",
+      "serv_6",
+      "serv_8"
+    ]
+  }
+]
