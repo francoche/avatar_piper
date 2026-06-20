@@ -42,6 +42,7 @@ function App() {
   const [isIntro, setIsIntro] = useState(false);
   const [gestureCategory, setGestureCategory] = useState(null);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [currentReplyText, setCurrentReplyText] = useState("");
 
   const timeoutRef = useRef(null);
 
@@ -82,9 +83,10 @@ function App() {
     return () => clearTimeout(timeoutRef.current);
   }, [avatarState, resetInactivityTimeout]);
 
-  const handleAudioReady = useCallback((audioPath, category) => {
+  const handleAudioReady = useCallback((audioPath, category, replyText) => {
     setAudioSource(audioPath);
     setGestureCategory(category);
+    setCurrentReplyText(replyText || "");
     setSpeak(false);
   }, [setSpeak]);
 
@@ -174,6 +176,7 @@ function App() {
         hasError={hasError}
         onClearError={handleClearError}
         isIntro={isIntro}
+        currentReplyText={currentReplyText}
       />
 
       <ReactAudioPlayer

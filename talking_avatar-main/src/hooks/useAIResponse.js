@@ -18,7 +18,7 @@ export function useAIResponse(speak, text, sessionId, onAudioReady, onError) {
         let { filename } = response.data;
         // Construct full path using same host as original
         const fullPath = 'http://localhost:5000' + filename; 
-        onAudioReady(fullPath, response.category);
+        onAudioReady(fullPath, response.category, response.aiReply);
       } catch (err) {
         console.error("[AVATAR] Error o Timeout detectado:", err.message);
         onError(err);

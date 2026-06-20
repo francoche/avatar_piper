@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TouchUI.css';
 import kbData from '../../data/knowledge_base.json';
 
-export default function TouchUI({ avatarState, onAskQuestion, onResetTimeout, hasError, onClearError, isIntro }) {
+export default function TouchUI({ avatarState, onAskQuestion, onResetTimeout, hasError, onClearError, isIntro, currentReplyText }) {
   // States: 'HOME', 'CATEGORY', 'RELATED'
   const [view, setView] = useState('HOME');
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -85,7 +85,12 @@ export default function TouchUI({ avatarState, onAskQuestion, onResetTimeout, ha
              <div className="bar"></div>
              <div className="bar"></div>
           </div>
-          <h2>{msg}</h2>
+          <div className="speaking-content">
+            <h2>{msg}</h2>
+            {isSpeaking && currentReplyText && (
+              <p className="subtitle-text">"{currentReplyText}"</p>
+            )}
+          </div>
         </div>
       </div>
     );
@@ -118,7 +123,9 @@ export default function TouchUI({ avatarState, onAskQuestion, onResetTimeout, ha
     return (
       <div className="touch-ui-overlay">
         <div className="category-panel glass-panel">
-          <button className="back-btn" onClick={handleHomeClick}>← Volver al Inicio</button>
+          <div className="nav-buttons">
+            <button className="back-btn" onClick={handleHomeClick}>← Volver al Inicio</button>
+          </div>
           <h2>{selectedCategory}</h2>
           <div className="questions-list">
             {questions.map(q => (
@@ -142,12 +149,14 @@ export default function TouchUI({ avatarState, onAskQuestion, onResetTimeout, ha
     return (
       <div className="touch-ui-overlay">
         <div className="related-panel glass-panel">
-          <button className="back-btn" onClick={handleHomeClick}>← Volver al Inicio</button>
-          {selectedCategory && (
-            <button className="back-btn category-back-btn" onClick={handleCategoryBack}>
-              ← Volver a {selectedCategory}
-            </button>
-          )}
+          <div className="nav-buttons">
+            <button className="back-btn" onClick={handleHomeClick}>← Volver al Inicio</button>
+            {selectedCategory && (
+              <button className="back-btn" onClick={handleCategoryBack}>
+                ← Volver a {selectedCategory}
+              </button>
+            )}
+          </div>
           <h2 className="title-section">Podés seguir explorando:</h2>
           <div className="questions-list">
             {related.map(q => (
