@@ -29,11 +29,11 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
           node.castShadow = true;
           node.receiveShadow = true;
           node.frustumCulled = false;
-          node.material = new THREE.MeshStandardMaterial({
-            map: robotTexture,
-            roughness: 0.4,
-            metalness: 0.1
-          });
+          // node.material = new THREE.MeshStandardMaterial({
+          //   map: robotTexture,
+          //   roughness: 0.4,
+          //   metalness: 0.1
+          // });
         }
       });
     }
@@ -51,6 +51,16 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
         if (!isMounted) return;
         if (fbx.animations.length > 0) {
           let clip = fbx.animations[0];
+
+          // FIX: Eliminar los tracks de Escala y Posición que vienen de Blender y rompen el modelo
+          clip.tracks = clip.tracks.filter(track => {
+            const isScale = track.name.includes('.scale');
+            // A veces la posición del hueso principal (Root/Armature) lo manda al infinito
+            const isRootPosition = track.name.toLowerCase().includes('armature.position') || track.name.toLowerCase().includes('root.position');
+            // Para estar ultra seguros, podemos quitar todos los cambios de escala
+            return !isScale && !isRootPosition;
+          });
+
           const action = mixer.clipAction(clip);
           actions.current[key] = action;
           console.log(`[AVATAR] ✅ Acción registrada: ${key}`);
@@ -252,7 +262,7 @@ export default function Avatar({ avatar_url, avatarState, analyserRef, gestureCa
 
   return (
     <group name="avatar" ref={baseGroupRef}>
-      <primitive object={gltf.scene} dispose={null} scale={[1, 1, 1]} rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} />
+      <primitive object={gltf.scene} dispose={null} scale={[1, 1, 1]} rotation={[0, Math.PI, 0]} position={[0, 0, 0]} />
     </group>
   );
 }
