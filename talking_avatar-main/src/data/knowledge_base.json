@@ -2,11 +2,11 @@
   {
     "id": "cyto_1",
     "category": "Cyto",
-    "question": "¿Quién sos y para qué fuiste creado?",
+    "question": "¿Qué tecnologías usás para funcionar?",
     "answers": [
-      "Hola, soy Cyto, un avatar interactivo desarrollado por estudiantes y graduados de sistemas de UADER FCyT. Para interactuar conmigo, tocá los botones que ves en la pantalla con tu dedo y elegí un tema para hacerme una pregunta.",
-      "¡Hola! Mi nombre es Cyto y soy el asistente virtual institucional de la FCyT. Fui creado por la comunidad. Para usar el sistema, simplemente tocá una de las opciones en la pantalla táctil y te voy a responder.",
-      "Soy Cyto, un avatar desarrollado en la facultad para ayudarte con tus dudas. Fui creado como un proyecto estudiantil. Podés interactuar conmigo tocando las diferentes categorías en la pantalla con tu dedo."
+      "Hola, soy Cyto. Funciono mediante React Three Fiber para mi entorno 3D y un motor local de síntesis de voz llamado Piper TTS que me permite hablar con vos en tiempo real.",
+      "¡Hola! Mi sistema utiliza tecnologías web modernas, combinando modelos de inteligencia artificial para mi voz y una interfaz interactiva táctil desarrollada en React.",
+      "Soy un avatar impulsado por un backend en Node.js y gráficos 3D avanzados. Utilizo algoritmos de texto a voz locales para brindarte esta experiencia interactiva sin depender de la nube."
     ],
     "related_questions": [
       "cyto_2",
